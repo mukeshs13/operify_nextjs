@@ -1,0 +1,18 @@
+{
+  "/_not-found/page": "app/_not-found/page.js",
+  "/favicon.ico/route": "app/favicon.ico/route.js",
+  "/page": "app/page.js",
+  "/team-member-detail2/page": "app/team-member-detail2/page.js",
+  "/team-member-detail4/page": "app/team-member-detail4/page.js",
+  "/team-member-detail1/page": "app/team-member-detail1/page.js",
+  "/team-member-detail3/page": "app/team-member-detail3/page.js",
+  "/team-member-detail/page": "app/team-member-detail/page.js",
+  "/careers/page": "app/careers/page.js",
+  "/contact-us/page": "app/contact-us/page.js",
+  "/company/page": "app/company/page.js",
+  "/packaging-shipping-guideline/page": "app/packaging-shipping-guideline/page.js",
+  "/our-team/page": "app/our-team/page.js",
+  "/sample-initiation-form/page": "app/sample-initiation-form/page.js",
+  "/sample-submission-guideline/page": "app/sample-submission-guideline/page.js",
+  "/samples-form/page": "app/samples-form/page.js"
+}
