@@ -7,6 +7,16 @@ import Image from "next/image";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [openDropdown, setOpenDropdown] = useState(null);
+
+  const toggleDropdown = (dropdownName) => {
+    setOpenDropdown(openDropdown === dropdownName ? null : dropdownName);
+  };
+
+  const closeAllMenus = () => {
+    setIsMenuOpen(false);
+    setOpenDropdown(null);
+  };
 
   return (
     <header className="bg-white shadow-sm">
@@ -14,7 +24,7 @@ const Header = () => {
         <div className="flex justify-between items-center px-4 py-3">
           {/* Logo */}
           <div className="flex-shrink-0 mr-5">
-            <Link href="/">
+            <Link href="/" onClick={closeAllMenus}>
               <Image
                 src="/images/logo.png"
                 alt="Operify Tech"
@@ -153,6 +163,7 @@ const Header = () => {
             <Link
               href="/contact-us"
               className="bg-gray-900 text-white px-6 py-3 rounded-md hover:bg-gray-800 transition-colors flex items-center space-x-2"
+              onClick={closeAllMenus}
             >
               <span>Get in Touch</span>
               <svg className="w-4 h-4" viewBox="0 0 60 60" fill="currentColor">
@@ -170,12 +181,21 @@ const Header = () => {
                 stroke="currentColor"
                 viewBox="0 0 24 24"
               >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M4 6h16M4 12h16M4 18h16"
-                />
+                {isMenuOpen ? (
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M6 18L18 6M6 6l12 12"
+                  />
+                ) : (
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M4 6h16M4 12h16M4 18h16"
+                  />
+                )}
               </svg>
             </button>
           </div>
@@ -185,42 +205,175 @@ const Header = () => {
         {isMenuOpen && (
           <div className="lg:hidden bg-white border-t">
             <nav className="px-4 py-4">
-              <ul className="space-y-4">
+              <ul className="space-y-2">
+                {/* Research Dropdown */}
                 <li>
-                  <Link
-                    href="/dna_sequencing"
-                    className="block text-gray-700 hover:text-blue-600"
-                    onClick={() => setIsMenuOpen(false)}
+                  <button
+                    onClick={() => toggleDropdown('research')}
+                    className="flex items-center justify-between w-full text-left text-gray-700 hover:text-blue-600 py-2"
                   >
-                    Research
-                  </Link>
+                    <span>Research</span>
+                    <svg
+                      className={`w-4 h-4 transition-transform duration-200 ${
+                        openDropdown === 'research' ? 'rotate-180' : ''
+                      }`}
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M19 9l-7 7-7-7"
+                      />
+                    </svg>
+                  </button>
+                  {openDropdown === 'research' && (
+                    <ul className="pl-4 mt-2 space-y-2">
+                      <li>
+                        <Link
+                          href="/dna_sequencing"
+                          className="block text-sm text-gray-600 hover:text-blue-600 py-1"
+                          onClick={closeAllMenus}
+                        >
+                          DNA Sequencing
+                        </Link>
+                      </li>
+                      <li>
+                        <Link
+                          href="/rna_sequencing"
+                          className="block text-sm text-gray-600 hover:text-blue-600 py-1"
+                          onClick={closeAllMenus}
+                        >
+                          RNA Sequencing
+                        </Link>
+                      </li>
+                    </ul>
+                  )}
                 </li>
+
+                {/* Health */}
                 <li>
                   <Link
                     href="/health"
-                    className="block text-gray-700 hover:text-blue-600"
-                    onClick={() => setIsMenuOpen(false)}
+                    className="block text-gray-700 hover:text-blue-600 py-2"
+                    onClick={closeAllMenus}
                   >
                     Health
                   </Link>
                 </li>
+
+                {/* Knowledge Hub Dropdown */}
                 <li>
-                  <Link
-                    href="/sample-submission-guideline"
-                    className="block text-gray-700 hover:text-blue-600"
-                    onClick={() => setIsMenuOpen(false)}
+                  <button
+                    onClick={() => toggleDropdown('knowledge')}
+                    className="flex items-center justify-between w-full text-left text-gray-700 hover:text-blue-600 py-2"
                   >
-                    Knowledge Hub
-                  </Link>
+                    <span>Knowledge Hub</span>
+                    <svg
+                      className={`w-4 h-4 transition-transform duration-200 ${
+                        openDropdown === 'knowledge' ? 'rotate-180' : ''
+                      }`}
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M19 9l-7 7-7-7"
+                      />
+                    </svg>
+                  </button>
+                  {openDropdown === 'knowledge' && (
+                    <ul className="pl-4 mt-2 space-y-2">
+                      <li>
+                        <Link
+                          href="/sample-submission-guideline"
+                          className="block text-sm text-gray-600 hover:text-blue-600 py-1"
+                          onClick={closeAllMenus}
+                        >
+                          Sample Submission Guideline
+                        </Link>
+                      </li>
+                      <li>
+                        <Link
+                          href="/sample-initiation-form"
+                          className="block text-sm text-gray-600 hover:text-blue-600 py-1"
+                          onClick={closeAllMenus}
+                        >
+                          Sample Initiation Form
+                        </Link>
+                      </li>
+                      <li>
+                        <Link
+                          href="/packaging-shipping-guideline"
+                          className="block text-sm text-gray-600 hover:text-blue-600 py-1"
+                          onClick={closeAllMenus}
+                        >
+                          Packaging and Shipping Guideline
+                        </Link>
+                      </li>
+                    </ul>
+                  )}
                 </li>
+
+                {/* About Us Dropdown */}
                 <li>
-                  <Link
-                    href="/company"
-                    className="block text-gray-700 hover:text-blue-600"
-                    onClick={() => setIsMenuOpen(false)}
+                  <button
+                    onClick={() => toggleDropdown('about')}
+                    className="flex items-center justify-between w-full text-left text-gray-700 hover:text-blue-600 py-2"
                   >
-                    About Us
-                  </Link>
+                    <span>About Us</span>
+                    <svg
+                      className={`w-4 h-4 transition-transform duration-200 ${
+                        openDropdown === 'about' ? 'rotate-180' : ''
+                      }`}
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M19 9l-7 7-7-7"
+                      />
+                    </svg>
+                  </button>
+                  {openDropdown === 'about' && (
+                    <ul className="pl-4 mt-2 space-y-2">
+                      <li>
+                        <Link
+                          href="/company"
+                          className="block text-sm text-gray-600 hover:text-blue-600 py-1"
+                          onClick={closeAllMenus}
+                        >
+                          Company
+                        </Link>
+                      </li>
+                      <li>
+                        <Link
+                          href="/our-team"
+                          className="block text-sm text-gray-600 hover:text-blue-600 py-1"
+                          onClick={closeAllMenus}
+                        >
+                          Our Leadership Team
+                        </Link>
+                      </li>
+                      <li>
+                        <Link
+                          href="/careers"
+                          className="block text-sm text-gray-600 hover:text-blue-600 py-1"
+                          onClick={closeAllMenus}
+                        >
+                          Career
+                        </Link>
+                      </li>
+                    </ul>
+                  )}
                 </li>
               </ul>
             </nav>
