@@ -98,7 +98,7 @@ const Header = () => {
               </li>
               <li className="relative group">
                 <Link
-                  href="/about-us"
+                  href="/company"
                   className="text-gray-700 hover:text-blue-600 font-medium"
                 >
                   About Us
@@ -206,7 +206,7 @@ const Header = () => {
                 </li>
                 <li>
                   <Link
-                    href="/sample_submission_guideline"
+                    href="/sample-submission-guideline"
                     className="block text-gray-700 hover:text-blue-600"
                     onClick={() => setIsMenuOpen(false)}
                   >
@@ -215,7 +215,7 @@ const Header = () => {
                 </li>
                 <li>
                   <Link
-                    href="/about-us"
+                    href="/company"
                     className="block text-gray-700 hover:text-blue-600"
                     onClick={() => setIsMenuOpen(false)}
                   >
