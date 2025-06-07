@@ -1,4 +1,7 @@
 {
+  "/favicon.ico/route": "app/favicon.ico/route.js",
+  "/sample-initiation-form/page": "app/sample-initiation-form/page.js",
   "/page": "app/page.js",
-  "/sample-submission-guideline/page": "app/sample-submission-guideline/page.js"
+  "/sample-submission-guideline/page": "app/sample-submission-guideline/page.js",
+  "/packaging-shipping-guideline/page": "app/packaging-shipping-guideline/page.js"
 }
