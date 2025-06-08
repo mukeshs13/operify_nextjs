@@ -273,13 +273,90 @@ const Header = () => {
                       </li>
                     </ul>
                   </li>
-                  <li>
+                  <li className="relative group/rna">
                     <Link
                       href="/rna-sequencing"
-                      className="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-teal-600"
+                      className="flex items-center justify-between px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-teal-600"
                     >
-                      RNA Sequencing
+                      <span className="font-medium">RNA Sequencing</span>
+                      <svg className="w-3 h-3 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                      </svg>
                     </Link>
+                    <ul className="absolute top-0 left-full bg-white shadow-xl rounded-md py-2 w-80 opacity-0 invisible group-hover/rna:opacity-100 group-hover/rna:visible transition-all duration-300 z-50 border border-gray-100 ml-1">
+                      <li>
+                        <Link
+                          href="/rna-sequencing/whole-transcriptome-sequencing"
+                          className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-teal-600"
+                        >
+                          Whole Transcriptome (Total RNA) Sequencing
+                        </Link>
+                      </li>
+                      <li>
+                        <Link
+                          href="/rna-sequencing/mrna-sequencing"
+                          className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-teal-600"
+                        >
+                          mRNA Sequencing
+                        </Link>
+                      </li>
+                      <li>
+                        <Link
+                          href="/rna-sequencing/small-rna-sequencing"
+                          className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-teal-600"
+                        >
+                          Small RNA (sRNA) sequencing
+                        </Link>
+                      </li>
+                      <li>
+                        <Link
+                          href="/rna-sequencing/lncrna-sequencing"
+                          className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-teal-600"
+                        >
+                          lncRNA Sequencing
+                        </Link>
+                      </li>
+                      <li>
+                        <Link
+                          href="/rna-sequencing/metatranscriptomics-sequencing"
+                          className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-teal-600"
+                        >
+                          Metatranscriptomics Sequencing
+                        </Link>
+                      </li>
+                      <li>
+                        <Link
+                          href="/rna-sequencing/degradome-sequencing"
+                          className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-teal-600"
+                        >
+                          Degradome Sequencing
+                        </Link>
+                      </li>
+                      <li>
+                        <Link
+                          href="/rna-sequencing/iso-sequencing"
+                          className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-teal-600"
+                        >
+                          Iso Sequencing using PacBio
+                        </Link>
+                      </li>
+                      <li>
+                        <Link
+                          href="/rna-sequencing/circular-rna-sequencing"
+                          className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-teal-600"
+                        >
+                          Circular RNA Sequencing
+                        </Link>
+                      </li>
+                      <li>
+                        <Link
+                          href="/rna-sequencing/single-cell-rna-sequencing"
+                          className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-teal-600"
+                        >
+                          Single Cell RNA Sequencing
+                        </Link>
+                      </li>
+                    </ul>
                   </li>
                 </ul>
               </li>
@@ -569,13 +646,107 @@ const Header = () => {
                         )}
                       </li>
                       <li>
-                        <Link
-                          href="/rna-sequencing"
-                          className="block text-sm text-gray-600 hover:text-teal-600 py-2"
-                          onClick={closeAllMenus}
+                        <button
+                          onClick={() => toggleDropdown('rna')}
+                          className="flex items-center justify-between w-full text-left text-sm text-gray-600 hover:text-teal-600 py-2"
                         >
-                          RNA Sequencing
-                        </Link>
+                          <span>RNA Sequencing</span>
+                          <svg
+                            className={`w-3 h-3 transition-transform duration-200 ${
+                              openDropdown === 'rna' ? 'rotate-180' : ''
+                            }`}
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                          >
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                          </svg>
+                        </button>
+                        {openDropdown === 'rna' && (
+                          <ul className="pl-4 mt-2 space-y-1">
+                            <li>
+                              <Link
+                                href="/rna-sequencing/whole-transcriptome-sequencing"
+                                className="block text-xs text-gray-500 hover:text-teal-600 py-1"
+                                onClick={closeAllMenus}
+                              >
+                                Whole Transcriptome (Total RNA)
+                              </Link>
+                            </li>
+                            <li>
+                              <Link
+                                href="/rna-sequencing/mrna-sequencing"
+                                className="block text-xs text-gray-500 hover:text-teal-600 py-1"
+                                onClick={closeAllMenus}
+                              >
+                                mRNA Sequencing
+                              </Link>
+                            </li>
+                            <li>
+                              <Link
+                                href="/rna-sequencing/small-rna-sequencing"
+                                className="block text-xs text-gray-500 hover:text-teal-600 py-1"
+                                onClick={closeAllMenus}
+                              >
+                                Small RNA (sRNA) sequencing
+                              </Link>
+                            </li>
+                            <li>
+                              <Link
+                                href="/rna-sequencing/lncrna-sequencing"
+                                className="block text-xs text-gray-500 hover:text-teal-600 py-1"
+                                onClick={closeAllMenus}
+                              >
+                                lncRNA Sequencing
+                              </Link>
+                            </li>
+                            <li>
+                              <Link
+                                href="/rna-sequencing/metatranscriptomics-sequencing"
+                                className="block text-xs text-gray-500 hover:text-teal-600 py-1"
+                                onClick={closeAllMenus}
+                              >
+                                Metatranscriptomics
+                              </Link>
+                            </li>
+                            <li>
+                              <Link
+                                href="/rna-sequencing/degradome-sequencing"
+                                className="block text-xs text-gray-500 hover:text-teal-600 py-1"
+                                onClick={closeAllMenus}
+                              >
+                                Degradome Sequencing
+                              </Link>
+                            </li>
+                            <li>
+                              <Link
+                                href="/rna-sequencing/iso-sequencing"
+                                className="block text-xs text-gray-500 hover:text-teal-600 py-1"
+                                onClick={closeAllMenus}
+                              >
+                                Iso Sequencing (PacBio)
+                              </Link>
+                            </li>
+                            <li>
+                              <Link
+                                href="/rna-sequencing/circular-rna-sequencing"
+                                className="block text-xs text-gray-500 hover:text-teal-600 py-1"
+                                onClick={closeAllMenus}
+                              >
+                                Circular RNA Sequencing
+                              </Link>
+                            </li>
+                            <li>
+                              <Link
+                                href="/rna-sequencing/single-cell-rna-sequencing"
+                                className="block text-xs text-gray-500 hover:text-teal-600 py-1"
+                                onClick={closeAllMenus}
+                              >
+                                Single Cell RNA
+                              </Link>
+                            </li>
+                          </ul>
+                        )}
                       </li>
                     </ul>
                   )}
