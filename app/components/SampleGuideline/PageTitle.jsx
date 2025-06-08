@@ -28,7 +28,7 @@ const PageTitle = () => {
       </div>
       
       {/* Page Title */}
-      <div className="relative z-10 text-center pb-2 sm:pb-0 sm:-mt-2 lg:-mt-2">
+      <div className="relative z-10 text-center pb-2 sm:pb-0 sm:-mt-2 lg:mt-2">
         <h1 className="text-lg sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-white mb-2 px-4 leading-tight">
           Sample Submission Guideline
         </h1>

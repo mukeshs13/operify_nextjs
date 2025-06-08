@@ -22,7 +22,7 @@ const SampleInfoSection = ({ formData, onInputChange }) => {
       
       <div className="space-y-4">
         <div>
-          <label className="block mb-2 font-bold text-sm">
+          <label className="block mb-2 font-semibold text-sm text-gray-600">
             Project Title <span className="text-red-500">*</span>
           </label>
           <input
@@ -35,7 +35,7 @@ const SampleInfoSection = ({ formData, onInputChange }) => {
         </div>
 
         <div>
-          <label className="block mb-2 font-bold text-sm">
+          <label className="block mb-2 font-semibold text-sm text-gray-600">
             Number of Samples <span className="text-red-500">*</span>
           </label>
           <input
@@ -49,7 +49,7 @@ const SampleInfoSection = ({ formData, onInputChange }) => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div>
-            <label className="block mb-2 font-bold text-sm">
+            <label className="block mb-2 font-semibold text-sm text-gray-600">
               Sample Type <span className="text-red-500">*</span>
             </label>
             <select
@@ -66,7 +66,7 @@ const SampleInfoSection = ({ formData, onInputChange }) => {
             </select>
           </div>
           <div>
-            <label className="block mb-2 font-bold text-sm">Please Specify (if Others)</label>
+            <label className="block mb-2 font-semibold text-sm text-gray-600">Please Specify (if Others)</label>
             <input
               type="text"
               value={formData.Sample_Type_Other}
@@ -78,7 +78,7 @@ const SampleInfoSection = ({ formData, onInputChange }) => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div>
-            <label className="block mb-2 font-bold text-sm">
+            <label className="block mb-2 font-semibold text-sm text-gray-600">
               Sample Source <span className="text-red-500">*</span>
             </label>
             <select
@@ -95,7 +95,7 @@ const SampleInfoSection = ({ formData, onInputChange }) => {
             </select>
           </div>
           <div>
-            <label className="block mb-2 font-bold text-sm">Please Specify (if Others)</label>
+            <label className="block mb-2 font-semibold text-sm text-gray-600">Please Specify (if Others)</label>
             <input
               type="text"
               value={formData.Sample_Source_Other}
@@ -107,7 +107,7 @@ const SampleInfoSection = ({ formData, onInputChange }) => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div>
-            <label className="block mb-2 font-bold text-sm">
+            <label className="block mb-2 font-semibold text-sm text-gray-600">
               Pathogenicity <span className="text-red-500">*</span>
             </label>
             <input
@@ -119,7 +119,7 @@ const SampleInfoSection = ({ formData, onInputChange }) => {
             />
           </div>
           <div>
-            <label className="block mb-2 font-bold text-sm">Remarks</label>
+            <label className="block mb-2 font-semibold text-sm text-gray-600">Remarks</label>
             <input
               type="text"
               value={formData.Sample_Remarks}

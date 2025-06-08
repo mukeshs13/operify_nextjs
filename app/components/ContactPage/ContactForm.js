@@ -1,6 +1,53 @@
-'use client';
+"use client"
 import React, { useState } from 'react';
-import CustomSelect from './CustomSelect';
+
+const CustomSelect = ({ options, value, onChange, placeholder, required }) => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  return (
+    <div className="relative">
+      <button
+        type="button"
+        onClick={() => setIsOpen(!isOpen)}
+        className="w-full px-5 py-4 bg-white border border-teal-400 rounded-full text-left focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent appearance-none text-gray-600"
+        required={required}
+      >
+        <span className={value ? 'text-gray-800' : 'text-gray-500'}>
+          {value || placeholder}
+        </span>
+        <svg
+          className={`absolute right-4 top-1/2 transform -translate-y-1/2 w-4 h-4 transition-transform ${isOpen ? 'rotate-180' : ''}`}
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+        </svg>
+      </button>
+      
+      {isOpen && (
+        <div className="absolute z-10 w-full mt-1 bg-white border border-gray-300 rounded-lg shadow-lg">
+          {options.map((option, index) => (
+            <button
+              key={index}
+              type="button"
+              disabled={option.disabled}
+              onClick={() => {
+                if (!option.disabled) {
+                  onChange(option.value);
+                  setIsOpen(false);
+                }
+              }}
+              className={`w-full px-4 py-3 text-left hover:bg-gray-50 first:rounded-t-lg last:rounded-b-lg ${option.disabled ? 'text-gray-400 cursor-not-allowed' : 'text-gray-700'}`}
+            >
+              {option.label}
+            </button>
+          ))}
+        </div>
+      )}
+    </div>
+  );
+};
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
@@ -43,13 +90,8 @@ const ContactForm = () => {
     setIsSubmitting(true);
     
     try {
-      // Add your form submission logic here
       console.log('Form submitted:', formData);
-      
-      // Simulate API call
       await new Promise(resolve => setTimeout(resolve, 2000));
-      
-      // Reset form or show success message
       alert('Message sent successfully!');
       setFormData({
         name: '',
@@ -69,14 +111,14 @@ const ContactForm = () => {
 
   return (
     <div className="lg:w-7/12">
-      <div className="bg-white p-6 md:p-8 lg:p-10">
+      <div className="p-6 md:p-8 lg:p-10 rounded-3xl" style={{ backgroundColor: '#f2fcfc' }}>
         <div className="mb-8">
-          <h2 className="text-2xl md:text-3xl font-semibold text-gray-800 mb-2">
+          <h2 className="text-2xl md:text-3xl font-normal text-teal-700 mb-2">
             Send a message
           </h2>
         </div>
 
-        <form onSubmit={handleSubmit} className="space-y-6">
+        <div className="space-y-6">
           <input type="hidden" name="form_type" value="contact" />
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -88,7 +130,7 @@ const ContactForm = () => {
                 onChange={handleInputChange}
                 placeholder="Your Name"
                 required
-                className="w-full px-5 py-4 border border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                className="w-full px-5 py-4 bg-white border border-teal-400 rounded-full focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent placeholder-gray-500"
               />
             </div>
             <div>
@@ -99,7 +141,7 @@ const ContactForm = () => {
                 onChange={handleInputChange}
                 placeholder="Your Phone"
                 required
-                className="w-full px-5 py-4 border border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                className="w-full px-5 py-4 bg-white border border-teal-400 rounded-full focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent placeholder-gray-500"
               />
             </div>
           </div>
@@ -123,7 +165,7 @@ const ContactForm = () => {
                 onChange={handleInputChange}
                 placeholder="Your Email"
                 required
-                className="w-full px-5 py-4 border border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                className="w-full px-5 py-4 bg-white border border-teal-400 rounded-full focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent placeholder-gray-500"
               />
             </div>
             <div>
@@ -134,7 +176,7 @@ const ContactForm = () => {
                 onChange={handleInputChange}
                 placeholder="Organisation"
                 required
-                className="w-full px-5 py-4 border border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                className="w-full px-5 py-4 bg-white border border-teal-400 rounded-full focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent placeholder-gray-500"
               />
             </div>
           </div>
@@ -147,7 +189,7 @@ const ContactForm = () => {
               rows={6}
               placeholder="Project description"
               required
-              className="w-full px-5 py-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent resize-vertical"
+              className="w-full px-5 py-4 bg-white border border-teal-400 rounded-2xl focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent resize-vertical placeholder-gray-500"
             />
           </div>
 
@@ -155,7 +197,8 @@ const ContactForm = () => {
             <button
               type="submit"
               disabled={isSubmitting}
-              className="inline-flex items-center justify-center px-8 py-4 bg-white border-2 border-gray-800 text-gray-800 font-semibold rounded-full hover:bg-gray-800 hover:text-white transition-all duration-300 group disabled:opacity-50 disabled:cursor-not-allowed"
+              onClick={handleSubmit}
+              className="inline-flex items-center justify-center px-8 py-3 bg-teal-600 text-white font-medium rounded-full hover:bg-teal-700 transition-all duration-300 group disabled:opacity-50 disabled:cursor-not-allowed"
             >
               {isSubmitting ? (
                 <div className="flex items-center space-x-2">
@@ -164,22 +207,22 @@ const ContactForm = () => {
                 </div>
               ) : (
                 <>
-                  <span className="mr-2">
-                    <svg 
-                      xmlns="http://www.w3.org/2000/svg" 
-                      viewBox="0 0 60 60"
-                      className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300"
-                      fill="currentColor"
-                    >
-                      <path d="m31 50.979c-.362.007-.727-.081-1.049-.28-.929-.572-1.212-1.814-.653-2.742.047-.082 5.886-9.826 17.032-15.958h-43.33c-1.103 0-2-.897-2-2s.897-2 2-2h43.33c-11.084-6.097-16.989-15.884-17.047-15.982-.547-.934-.244-2.177.689-2.73.946-.561 2.192-.236 2.757.715.909 1.45 9.433 14.449 24.722 18.046.915.225 1.549 1.026 1.549 1.952s-.63 1.729-1.532 1.948c-15.354 3.61-23.849 16.626-24.767 18.099-.36.577-1.025.919-1.7.932z" />
-                    </svg>
-                  </span>
-                  <span>Submit</span>
+                  <span className="mr-2">Submit</span>
+                  <svg 
+                    xmlns="http://www.w3.org/2000/svg" 
+                    viewBox="0 0 24 24"
+                    className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-300"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth={2}
+                  >
+                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                  </svg>
                 </>
               )}
             </button>
           </div>
-        </form>
+        </div>
       </div>
     </div>
   );

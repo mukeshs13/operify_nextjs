@@ -177,7 +177,7 @@ const SubmissionOptions = () => {
   };
 
   return (
-    <div className="space-y-8">
+    <div className="space-y-4">
       {/* Title */}
       <div>
         <h3 className="text-gray-600 text-lg md:text-xl font-medium mb-6">

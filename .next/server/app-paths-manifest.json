@@ -1,7 +1,8 @@
 {
-  "/page": "app/page.js",
-  "/rna-sequencing/mrna-sequencing/page": "app/rna-sequencing/mrna-sequencing/page.js",
-  "/rna-sequencing/single-cell-rna-sequencing/page": "app/rna-sequencing/single-cell-rna-sequencing/page.js",
-  "/company/page": "app/company/page.js",
-  "/contact-us/page": "app/contact-us/page.js"
+  "/favicon.ico/route": "app/favicon.ico/route.js",
+  "/careers/page": "app/careers/page.js",
+  "/packaging-shipping-guideline/page": "app/packaging-shipping-guideline/page.js",
+  "/sample-submission-guideline/page": "app/sample-submission-guideline/page.js",
+  "/sample-initiation-form/page": "app/sample-initiation-form/page.js",
+  "/samples-form/page": "app/samples-form/page.js"
 }

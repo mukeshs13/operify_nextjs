@@ -62,7 +62,7 @@ const OurOfferings = () => {
               alt="Advanced Laboratory Services" 
               width={600} 
               height={400}
-              className="relative z-10 w-full rounded-lg shadow-md"
+              className="relative z-10 w-full rounded-lg"
             />
           </div>
         </div>

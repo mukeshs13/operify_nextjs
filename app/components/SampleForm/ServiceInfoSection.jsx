@@ -57,7 +57,7 @@ const ServiceInfoSection = ({ formData, onInputChange }) => {
       <div className="space-y-4">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div>
-            <label className="block mb-2 font-bold text-sm">
+            <label className="block mb-2 font-semibold text-sm text-gray-600">
               Service Requested <span className="text-red-500">*</span>
             </label>
             <select
@@ -74,7 +74,7 @@ const ServiceInfoSection = ({ formData, onInputChange }) => {
             </select>
           </div>
           <div>
-            <label className="block mb-2 font-bold text-sm">Please Specify (if Others)</label>
+            <label className="block mb-2 font-semibold text-sm text-gray-600">Please Specify (if Others)</label>
             <input
               type="text"
               value={formData.Service_Requested_Other}
@@ -86,7 +86,7 @@ const ServiceInfoSection = ({ formData, onInputChange }) => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div>
-            <label className="block mb-2 font-bold text-sm">
+            <label className="block mb-2 font-semibold text-sm text-gray-600">
               Type of Library <span className="text-red-500">*</span>
             </label>
             <select
@@ -103,7 +103,7 @@ const ServiceInfoSection = ({ formData, onInputChange }) => {
             </select>
           </div>
           <div>
-            <label className="block mb-2 font-bold text-sm">Please Specify (if Others)</label>
+            <label className="block mb-2 font-semibold text-sm text-gray-600">Please Specify (if Others)</label>
             <input
               type="text"
               value={formData.Type_of_Library_Other}
@@ -115,7 +115,7 @@ const ServiceInfoSection = ({ formData, onInputChange }) => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div>
-            <label className="block mb-2 font-bold text-sm">
+            <label className="block mb-2 font-semibold text-sm text-gray-600">
               Required Library Size <span className="text-red-500">*</span>
             </label>
             <select
@@ -132,7 +132,7 @@ const ServiceInfoSection = ({ formData, onInputChange }) => {
             </select>
           </div>
           <div>
-            <label className="block mb-2 font-bold text-sm">Please Specify (if Others)</label>
+            <label className="block mb-2 font-semibold text-sm text-gray-600">Please Specify (if Others)</label>
             <input
               type="text"
               value={formData.Required_Library_Size_Other}
@@ -144,7 +144,7 @@ const ServiceInfoSection = ({ formData, onInputChange }) => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div>
-            <label className="block mb-2 font-bold text-sm">Index Information (only for RTRL)</label>
+            <label className="block mb-2 font-semibold text-sm text-gray-600">Index Information (only for RTRL)</label>
             <input
               type="text"
               value={formData.Index_Information}
@@ -153,7 +153,7 @@ const ServiceInfoSection = ({ formData, onInputChange }) => {
             />
           </div>
           <div>
-            <label className="block mb-2 font-bold text-sm">Kit Information (only for RTRL)</label>
+            <label className="block mb-2 font-semibold text-sm text-gray-600">Kit Information (only for RTRL)</label>
             <input
               type="text"
               value={formData.Kit_Information}
@@ -165,7 +165,7 @@ const ServiceInfoSection = ({ formData, onInputChange }) => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div>
-            <label className="block mb-2 font-bold text-sm">
+            <label className="block mb-2 font-semibold text-sm text-gray-600">
               Sequencing Platform <span className="text-red-500">*</span>
             </label>
             <select
@@ -182,7 +182,7 @@ const ServiceInfoSection = ({ formData, onInputChange }) => {
             </select>
           </div>
           <div>
-            <label className="block mb-2 font-bold text-sm">Please Specify (if Others)</label>
+            <label className="block mb-2 font-semibold text-sm text-gray-600">Please Specify (if Others)</label>
             <input
               type="text"
               value={formData.Sequencing_Platform_Other}
@@ -194,7 +194,7 @@ const ServiceInfoSection = ({ formData, onInputChange }) => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div>
-            <label className="block mb-2 font-bold text-sm">
+            <label className="block mb-2 font-semibold text-sm text-gray-600">
               Sequencing Read Length <span className="text-red-500">*</span>
             </label>
             <select
@@ -211,7 +211,7 @@ const ServiceInfoSection = ({ formData, onInputChange }) => {
             </select>
           </div>
           <div>
-            <label className="block mb-2 font-bold text-sm">Please Specify (if Others)</label>
+            <label className="block mb-2 font-semibold text-sm text-gray-600">Please Specify (if Others)</label>
             <input
               type="text"
               value={formData.Sequencing_Read_Length_Other}
@@ -223,7 +223,7 @@ const ServiceInfoSection = ({ formData, onInputChange }) => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div>
-            <label className="block mb-2 font-bold text-sm">
+            <label className="block mb-2 font-semibold text-sm text-gray-600">
               Total Data Requirement (in Million or in GB) <span className="text-red-500">*</span>
             </label>
             <input
@@ -235,7 +235,7 @@ const ServiceInfoSection = ({ formData, onInputChange }) => {
             />
           </div>
           <div>
-            <label className="block mb-2 font-bold text-sm">Remarks</label>
+            <label className="block mb-2 font-semibold text-sm text-gray-600">Remarks</label>
             <input
               type="text"
               value={formData.Service_Remarks}

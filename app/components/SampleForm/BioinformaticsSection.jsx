@@ -22,7 +22,7 @@ const BioinformaticsSection = ({ formData, onInputChange }) => {
       <div className="space-y-4">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div>
-            <label className="block mb-2 font-bold text-sm">
+            <label className="block mb-2 font-semibold text-sm text-gray-600">
               Analysis Requested <span className="text-red-500">*</span>
             </label>
             <select
@@ -39,7 +39,7 @@ const BioinformaticsSection = ({ formData, onInputChange }) => {
             </select>
           </div>
           <div>
-            <label className="block mb-2 font-bold text-sm">Please Specify Details</label>
+            <label className="block mb-2 font-semibold text-sm text-gray-600">Please Specify Details</label>
             <input
               type="text"
               value={formData.Analysis_Details}
@@ -51,7 +51,7 @@ const BioinformaticsSection = ({ formData, onInputChange }) => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div>
-            <label className="block mb-2 font-bold text-sm">
+            <label className="block mb-2 font-semibold text-sm text-gray-600">
               Reference Genome Available <span className="text-red-500">*</span>
             </label>
             <select
@@ -68,7 +68,7 @@ const BioinformaticsSection = ({ formData, onInputChange }) => {
             </select>
           </div>
           <div>
-            <label className="block mb-2 font-bold text-sm">If Yes, Please Mention Genome Size</label>
+            <label className="block mb-2 font-semibold text-sm text-gray-600">If Yes, Please Mention Genome Size</label>
             <input
               type="text"
               value={formData.Genome_Size}
@@ -79,7 +79,7 @@ const BioinformaticsSection = ({ formData, onInputChange }) => {
         </div>
 
         <div>
-          <label className="block mb-2 font-bold text-sm">
+          <label className="block mb-2 font-semibold text-sm text-gray-600">
             Special Consideration <span className="text-red-500">*</span>
           </label>
           <textarea

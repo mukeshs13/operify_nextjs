@@ -6,7 +6,7 @@ const CareerPage = () => {
   return (
     <div className="page-content contact-us">
         <CareerHero />
-      <div className="h-9"></div>
+      <div className="h-6"></div>
       <CareerSection />
     </div>
   );

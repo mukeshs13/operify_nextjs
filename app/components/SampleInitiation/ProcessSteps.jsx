@@ -1,5 +1,4 @@
 import React from 'react';
-import Link from 'next/link';
 
 const ProcessSteps = () => {
   const steps = [
@@ -7,8 +6,8 @@ const ProcessSteps = () => {
       number: 1,
       title: "Review Sample Requirements:",
       items: [
-        <>Before submitting forms and samples, check the <Link href="/sample-submission-guideline" className="text-gray-500 underline">sample submission guidelines</Link> page and plan your project accordingly.</>,
-        <>Read the <Link href="/packaging-and-shipping-guideline" className="text-gray-500 underline">packaging and shipping</Link> guidelines and fill out the appropriate sample Initiation form.</>,
+        <>Before submitting forms and samples, check the <a href="/sample-submission-guideline" className="text-gray-500 underline">sample submission guidelines</a> page and plan your project accordingly.</>,
+        <>Read the <a href="/packaging-and-shipping-guideline" className="text-gray-500 underline">packaging and shipping</a> guidelines and fill out the appropriate sample Initiation form.</>,
         "Please note that samples will be processed in the order of date received physically in the lab along with duly filled Sample Submission Form. Submitting an online form without sample shipment will not reserve a space in the queue."
       ]
     },
@@ -23,7 +22,7 @@ const ProcessSteps = () => {
       number: 3,
       title: "Ship or Drop-Off Samples:",
       items: [
-        <>Ship or drop off your samples at the lab with a printed copy of the submission form. We can also pick up the sample from your institution(additional logistic charges will be applicable). Check the <Link href="/packaging-and-shipping-guideline#schedule-content" className="text-gray-500 underline">shipping schedule</Link> for more details.</>
+        <>Ship or drop off your samples at the lab with a printed copy of the submission form. We can also pick up the sample from your institution(additional logistic charges will be applicable). Check the <a href="/packaging-and-shipping-guideline#schedule-content" className="text-gray-500 underline">shipping schedule</a> for more details.</>
       ]
     }
   ];
@@ -33,7 +32,10 @@ const ProcessSteps = () => {
       {steps.map((step) => (
         <div key={step.number} className="flex items-start space-x-4">
           {/* Step Number */}
-          <div className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-white rounded-md flex items-center justify-center text-base font-bold">
+          <div 
+            className="flex-shrink-0 w-8 h-8 text-white rounded-md flex items-center justify-center text-base font-bold"
+            style={{ backgroundColor: '#faae31' }}
+          >
             {step.number}
           </div>
           

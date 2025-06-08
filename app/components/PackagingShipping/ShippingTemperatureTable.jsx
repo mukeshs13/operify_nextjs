@@ -1,5 +1,30 @@
-// components/PackagingShipping/ShippingTemperatureTable.jsx
-import React from 'react';
+'use client';
+import React, { useState } from 'react';
+
+const TooltipIcon = ({ text, rowIndex, totalRows }) => {
+  const [showTooltip, setShowTooltip] = useState(false);
+
+  if (!text) return null;
+
+  return (
+    <div className="relative inline-block ml-2">
+      <span
+        className="inline-flex items-center justify-center w-4 h-4 text-xs font-bold text-teal-600 border-2 border-teal-600 rounded-full cursor-pointer hover:bg-teal-600 hover:text-white transition-all duration-200"
+        onMouseEnter={() => setShowTooltip(true)}
+        onMouseLeave={() => setShowTooltip(false)}
+      >
+        i
+      </span>
+      
+      {showTooltip && (
+        <div className="absolute left-full top-1/2 transform -translate-y-1/2 ml-2 px-3 py-2 text-xs text-white bg-gray-800 rounded-md shadow-lg z-50 w-64 text-left">
+          {text}
+          <div className="absolute right-full top-1/2 transform -translate-y-1/2 w-0 h-0 border-t-4 border-b-4 border-r-4 border-transparent border-r-gray-800"></div>
+        </div>
+      )}
+    </div>
+  );
+};
 
 const ShippingTemperatureTable = () => {
   const shippingData = [
@@ -101,21 +126,6 @@ const ShippingTemperatureTable = () => {
     }
   ];
 
-  const TooltipIcon = ({ tooltip }) => {
-    if (!tooltip) return null;
-    
-    return (
-      <div className="group relative inline-block ml-2">
-        <span className="inline-flex items-center justify-center w-3 h-3 text-xs font-bold text-teal-600 border border-teal-600 rounded-full cursor-help">
-          i
-        </span>
-        <div className="invisible group-hover:visible absolute z-10 w-80 p-3 text-sm text-gray-700 bg-gray-50 border border-gray-200 rounded-lg shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 left-full top-0 ml-2">
-          {tooltip}
-        </div>
-      </div>
-    );
-  };
-
   return (
     <div className="space-y-6">
       <div>
@@ -149,7 +159,7 @@ const ShippingTemperatureTable = () => {
                   <td className="border border-gray-300 px-3 py-2 align-top">
                     <div className="flex items-start">
                       <span>{row.sampleType}</span>
-                      <TooltipIcon tooltip={row.tooltip} />
+                      <TooltipIcon text={row.tooltip} rowIndex={index} totalRows={shippingData.length} />
                     </div>
                   </td>
                   <td className="border border-gray-300 px-3 py-2 align-top">
