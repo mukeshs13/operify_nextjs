@@ -2,53 +2,37 @@ import React from "react";
 
 const HeroSection = () => {
   return (
-    <section className="relative h-screen overflow-hidden">
+    <section className="relative h-screen overflow-hidden rounded-3xl m-6">
       {/* Background Video */}
       <video
         autoPlay
         muted
         loop
-        className="absolute inset-0 w-full h-full object-cover"
+        className="absolute inset-0 w-full h-full object-cover rounded-3xl"
       >
         <source src="/images/homepage-2/DNA-BG.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
 
       {/* Overlay */}
-      <div className="absolute inset-0 bg-black bg-opacity-40"></div>
+      <div className="absolute inset-0 bg-black bg-opacity-50 rounded-3xl"></div>
 
       {/* Content */}
-      <div className="relative z-10 container mx-auto px-4 h-full flex items-center">
+      <div className="relative z-10 container mx-auto px-8 h-full flex items-center">
         <div className="text-white max-w-4xl">
-          <p className="text-lg font-medium mb-4 text-yellow-400">
-            #WEBSITEUNDERCONSTRUCTION
-          </p>
-          <h1 className="text-5xl md:text-6xl font-bold leading-tight">
-            Unleash the genomic Secrets <br /> with Us!
+          {/* Badge */}
+          <div className="inline-block mb-6">
+            <span className="bg-gray-800 bg-opacity-80 text-white px-4 py-2 rounded-full text-sm font-medium border border-gray-600">
+              #WEBSITEUNDERCONSTRUCTION
+            </span>
+          </div>
+          
+          {/* Main Heading */}
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-white">
+            Unleash The Genomic Secrets<br />
+            With Us!
           </h1>
         </div>
-      </div>
-
-      {/* Bottom shapes */}
-      <div className="absolute bottom-0 left-0">
-        <svg
-          width="30"
-          height="30"
-          viewBox="0 0 30 30"
-          className="text-red-500 fill-current"
-        >
-          <path d="M30 30V0C30 16 16 30 0 30H30Z" />
-        </svg>
-      </div>
-      <div className="absolute bottom-0 right-0">
-        <svg
-          width="30"
-          height="30"
-          viewBox="0 0 30 30"
-          className="text-red-500 fill-current"
-        >
-          <path d="M30 30V0C30 16 16 30 0 30H30Z" />
-        </svg>
       </div>
     </section>
   );

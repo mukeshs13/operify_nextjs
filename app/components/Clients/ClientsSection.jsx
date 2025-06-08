@@ -1,8 +1,12 @@
-// components/Clients/ClientsSection.jsx
-import React from 'react';
+"use client"
+import React, { useState, useEffect, useRef } from 'react';
 import Image from 'next/image';
 
 const ClientsSection = () => {
+  const [translateX, setTranslateX] = useState(0);
+  const [isTransitioning, setIsTransitioning] = useState(true);
+  const containerRef = useRef(null);
+  
   const clients = [
     { name: "Ashoka University", logo: "/images/client/ashoka.png" },
     { name: "BRIC", logo: "/images/client/BRIC.png" },
@@ -22,11 +26,40 @@ const ClientsSection = () => {
     { name: "BHU", logo: "/images/client/bhu.png" }
   ];
 
+  // Triple the array for seamless infinite loop
+  const infiniteClients = [...clients, ...clients, ...clients];
+  const itemWidth = 100 / 50; // Each item is 1/6 of the container
+  const singleSetWidth = clients.length * itemWidth; // Width of one complete set
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setTranslateX(prev => {
+        const newTranslateX = prev + itemWidth;
+        
+        // When we reach the end of the second set, reset to the beginning of the second set
+        if (newTranslateX >= singleSetWidth * 1) {
+          // Temporarily disable transition for seamless reset
+          setIsTransitioning(false);
+          setTimeout(() => {
+            setTranslateX(singleSetWidth); // Reset to start of second set
+            setIsTransitioning(true);
+          }, 50);
+          
+          return prev;
+        }
+        
+        return newTranslateX;
+      });
+    }, 3000);
+
+    return () => clearInterval(timer);
+  }, [itemWidth, singleSetWidth]);
+
   return (
-    <section className="py-16 bg-gray-100">
+    <section className="py-16 bg-gray-50">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <h2 className="text-2xl font-semibold text-teal-700 mb-4">
+          <h2 className="text-3xl font-bold text-teal-700 mb-6">
             Trusted By Leading Institutions
           </h2>
           <div className="flex justify-center mb-8">
@@ -39,23 +72,38 @@ const ClientsSection = () => {
           </div>
         </div>
         
-        {/* Client logos grid */}
-        <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8 items-center">
-          {clients.map((client, index) => (
-            <div key={index} className="flex justify-center items-center p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow">
-              <Image 
-                src={client.logo} 
-                alt={client.name} 
-                width={120} 
-                height={80}
-                className="max-w-full h-auto object-contain grayscale hover:grayscale-0 transition-all duration-300"
-              />
-            </div>
-          ))}
+        {/* Slider Container */}
+        <div className="overflow-hidden">
+          <div 
+            ref={containerRef}
+            className={`flex ${isTransitioning ? 'transition-transform duration-1000 ease-linear' : ''}`}
+            style={{ 
+              transform: `translateX(-${translateX}%)`,
+              width: `${(infiniteClients.length * 100) / 6}%`
+            }}
+          >
+            {infiniteClients.map((client, index) => (
+              <div 
+                key={`${client.name}-${index}`}
+                className="flex-shrink-0 px-4"
+                style={{ width: `${100 / infiniteClients.length}%` }}
+              >
+                <div className="flex justify-center items-center h-24">
+                  <Image 
+                    src={client.logo} 
+                    alt={client.name} 
+                    width={150} 
+                    height={75}
+                    className="w-32 h-16 object-contain hover:scale-105 transition-transform duration-300"
+                  />
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </section>
   );
 };
 
-export default ClientsSection
+export default ClientsSection;

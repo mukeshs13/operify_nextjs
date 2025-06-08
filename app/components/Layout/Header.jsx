@@ -1,21 +1,32 @@
 "use client";
 
-// components/Layout/Header.jsx
 import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [openDropdown, setOpenDropdown] = useState(null);
+  const [openDropdown, setOpenDropdown] = useState([]);
 
-  const toggleDropdown = (dropdownName) => {
-    setOpenDropdown(openDropdown === dropdownName ? null : dropdownName);
+  const toggleDropdown = (dropdownName, event) => {
+    if (event) {
+      event.stopPropagation();
+    }
+    
+    setOpenDropdown(current => {
+      if (current.includes(dropdownName)) {
+        // Remove this dropdown and any child dropdowns
+        return current.filter(name => !name.startsWith(dropdownName));
+      } else {
+        // Add this dropdown
+        return [...current, dropdownName];
+      }
+    });
   };
 
   const closeAllMenus = () => {
     setIsMenuOpen(false);
-    setOpenDropdown(null);
+    setOpenDropdown([]);
   };
 
   return (
@@ -31,7 +42,6 @@ const Header = () => {
                 width={200}
                 height={60}
                 className="h-8 sm:h-10 md:h-12 w-auto"
-                style={{ width: 'auto', height: 'auto' }}
               />
             </Link>
           </div>
@@ -461,7 +471,7 @@ const Header = () => {
             </button>
             <Link
               href="/contact-us"
-              className="hidden sm:flex text-white px-4 lg:px-6 py-2 sm:py-3 rounded-md hover:opacity-90 transition-all items-center space-x-2 font-medium text-sm lg:text-base"
+              className="hidden sm:flex text-white px-4 lg:px-6 py-2 sm:py-3 rounded-full hover:opacity-90 transition-all items-center space-x-2 font-medium text-sm lg:text-base"
               style={{ backgroundColor: '#2a6564' }}
               onClick={closeAllMenus}
             >
@@ -517,7 +527,7 @@ const Header = () => {
                     <span>Research</span>
                     <svg
                       className={`w-4 h-4 transition-transform duration-200 ${
-                        openDropdown === 'research' ? 'rotate-180' : ''
+                        openDropdown.includes('research') ? 'rotate-180' : ''
                       }`}
                       fill="none"
                       stroke="currentColor"
@@ -531,17 +541,17 @@ const Header = () => {
                       />
                     </svg>
                   </button>
-                  {openDropdown === 'research' && (
+                  {openDropdown.includes('research') && (
                     <ul className="pl-4 mt-2 space-y-2 pb-3">
                       <li>
                         <button
-                          onClick={() => toggleDropdown('dna')}
+                          onClick={(e) => toggleDropdown('dna', e)}
                           className="flex items-center justify-between w-full text-left text-sm text-gray-600 hover:text-teal-600 py-2"
                         >
                           <span>DNA Sequencing</span>
                           <svg
                             className={`w-3 h-3 transition-transform duration-200 ${
-                              openDropdown === 'dna' ? 'rotate-180' : ''
+                              openDropdown.includes('dna') ? 'rotate-180' : ''
                             }`}
                             fill="none"
                             stroke="currentColor"
@@ -550,7 +560,7 @@ const Header = () => {
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                           </svg>
                         </button>
-                        {openDropdown === 'dna' && (
+                        {openDropdown.includes('dna') && (
                           <ul className="pl-4 mt-2 space-y-1">
                             <li>
                               <Link
@@ -647,13 +657,13 @@ const Header = () => {
                       </li>
                       <li>
                         <button
-                          onClick={() => toggleDropdown('rna')}
+                          onClick={(e) => toggleDropdown('rna', e)}
                           className="flex items-center justify-between w-full text-left text-sm text-gray-600 hover:text-teal-600 py-2"
                         >
                           <span>RNA Sequencing</span>
                           <svg
                             className={`w-3 h-3 transition-transform duration-200 ${
-                              openDropdown === 'rna' ? 'rotate-180' : ''
+                              openDropdown.includes('rna') ? 'rotate-180' : ''
                             }`}
                             fill="none"
                             stroke="currentColor"
@@ -662,7 +672,7 @@ const Header = () => {
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                           </svg>
                         </button>
-                        {openDropdown === 'rna' && (
+                        {openDropdown.includes('rna') && (
                           <ul className="pl-4 mt-2 space-y-1">
                             <li>
                               <Link
@@ -774,7 +784,7 @@ const Header = () => {
                     <span>Knowledge Hub</span>
                     <svg
                       className={`w-4 h-4 transition-transform duration-200 ${
-                        openDropdown === 'knowledge' ? 'rotate-180' : ''
+                        openDropdown.includes('knowledge') ? 'rotate-180' : ''
                       }`}
                       fill="none"
                       stroke="currentColor"
@@ -788,7 +798,7 @@ const Header = () => {
                       />
                     </svg>
                   </button>
-                  {openDropdown === 'knowledge' && (
+                  {openDropdown.includes('knowledge') && (
                     <ul className="pl-4 mt-2 space-y-2 pb-3">
                       <li>
                         <Link
@@ -831,7 +841,7 @@ const Header = () => {
                     <span>About Us</span>
                     <svg
                       className={`w-4 h-4 transition-transform duration-200 ${
-                        openDropdown === 'about' ? 'rotate-180' : ''
+                        openDropdown.includes('about') ? 'rotate-180' : ''
                       }`}
                       fill="none"
                       stroke="currentColor"
@@ -845,7 +855,7 @@ const Header = () => {
                       />
                     </svg>
                   </button>
-                  {openDropdown === 'about' && (
+                  {openDropdown.includes('about') && (
                     <ul className="pl-4 mt-2 space-y-2 pb-3">
                       <li>
                         <Link

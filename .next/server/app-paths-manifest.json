@@ -1,7 +1,7 @@
 {
   "/page": "app/page.js",
-  "/rna-sequencing/whole-transcriptome-sequencing/page": "app/rna-sequencing/whole-transcriptome-sequencing/page.js",
-  "/dna-sequencing/enrichment-sequencing/page": "app/dna-sequencing/enrichment-sequencing/page.js",
   "/rna-sequencing/mrna-sequencing/page": "app/rna-sequencing/mrna-sequencing/page.js",
-  "/rna-sequencing/single-cell-rna-sequencing/page": "app/rna-sequencing/single-cell-rna-sequencing/page.js"
+  "/rna-sequencing/single-cell-rna-sequencing/page": "app/rna-sequencing/single-cell-rna-sequencing/page.js",
+  "/company/page": "app/company/page.js",
+  "/contact-us/page": "app/contact-us/page.js"
 }

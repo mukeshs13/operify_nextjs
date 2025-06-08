@@ -5,7 +5,7 @@ import Image from 'next/image';
 
 const Footer = () => {
   return (
-    <footer className="text-white relative overflow-hidden" style={{ backgroundColor: '#2a6564' }}>
+    <footer className="text-white relative overflow-hidden rounded-t-3xl" style={{ backgroundColor: '#2a6564' }}>
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute top-0 right-0 w-96 h-96 transform rotate-45 translate-x-48 -translate-y-48">
@@ -132,7 +132,7 @@ const Footer = () => {
       </div>
 
       {/* Bottom Bar */}
-      <div className="bg-gray-100 text-gray-600 relative z-10">
+      <div className="bg-gray-100 text-gray-600 relative z-10 rounded-t-2xl">
         <div className="container mx-auto px-4 py-4">
           <div className="flex flex-col md:flex-row justify-between items-center text-sm">
             <p>
