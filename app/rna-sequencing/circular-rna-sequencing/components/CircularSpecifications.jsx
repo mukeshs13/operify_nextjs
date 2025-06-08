@@ -4,7 +4,7 @@ import Link from 'next/link';
 const CircularSpecifications = () => {
   const specifications = [
     {
-      icon: "https://www.flaticon.com/free-icon/blood-sample-tube_17560492",
+      icon: "/images/homepage-2/NGS-Icons-45.svg",
       title: "Sample Requirement",
       content: (
         <div>

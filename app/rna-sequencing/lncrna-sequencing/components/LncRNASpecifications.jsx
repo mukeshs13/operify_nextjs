@@ -4,7 +4,7 @@ import Link from 'next/link';
 const LncRNASpecifications = () => {
   const specifications = [
     {
-      icon: "https://www.flaticon.com/free-icon/test-tube_12106488",
+      icon: "/images/homepage-2/NGS-Icons-45.svg",
       title: "Sample Requirement",
       content: (
         <div>
@@ -36,7 +36,7 @@ const LncRNASpecifications = () => {
       )
     },
     {
-      icon: "https://www.flaticon.com/free-icon/project-management_9402425",
+      icon: "/images/service/social-support.png",
       title: "Deliverables",
       content: (
         <ul className="list-disc list-inside space-y-1">
