@@ -86,6 +86,18 @@ const LongReadComparison = () => {
         <div className="flex flex-col xl:flex-row gap-8">
           {/* Mobile Card Layout (hidden on desktop) */}
           <div className="xl:hidden space-y-6">
+            {/* Mobile Table Header */}
+            <div className="bg-gray-100 rounded-lg p-4 mb-6">
+              <div className="grid grid-cols-1 gap-3">
+                <div className="font-semibold text-gray-700 text-center text-lg">Platform Types</div>
+                <div className="grid grid-cols-3 gap-2 text-center">
+                  <div className="font-medium text-gray-600 text-sm">Illumina NovaSeq 6000</div>
+                  <div className="font-medium text-gray-600 text-sm">PacBio Sequel II/IIe</div>
+                  <div className="font-medium text-gray-600 text-sm">Nanopore PromethION</div>
+                </div>
+              </div>
+            </div>
+
             {comparisonData.map((row, index) => (
               <div key={index} className="bg-white border border-gray-300 rounded-lg shadow-sm">
                 <div className="bg-gray-100 px-4 py-3 rounded-t-lg">
