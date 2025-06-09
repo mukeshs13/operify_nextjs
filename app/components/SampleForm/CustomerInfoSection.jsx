@@ -21,6 +21,7 @@ const CustomerInfoSection = ({ formData, onInputChange }) => {
               type="text"
               value={formData.Principal_Investigator}
               onChange={(e) => handleChange('Principal_Investigator', e.target.value)}
+              style={{ color: '#555555' }}
               className="w-full p-2 border border-gray-300 rounded text-sm font-arial h-10 box-border"
               required
             />
@@ -33,6 +34,7 @@ const CustomerInfoSection = ({ formData, onInputChange }) => {
               type="email"
               value={formData.Email}
               onChange={(e) => handleChange('Email', e.target.value)}
+              style={{ color: '#555555' }}
               className="w-full p-2 border border-gray-300 rounded text-sm font-arial h-10 box-border"
               required
             />
@@ -48,6 +50,7 @@ const CustomerInfoSection = ({ formData, onInputChange }) => {
               type="text"
               value={formData.Company_Institution}
               onChange={(e) => handleChange('Company_Institution', e.target.value)}
+              style={{ color: '#555555' }}
               className="w-full p-2 border border-gray-300 rounded text-sm font-arial h-10 box-border"
               required
             />
@@ -60,6 +63,7 @@ const CustomerInfoSection = ({ formData, onInputChange }) => {
               type="tel"
               value={formData.Contact_Number}
               onChange={(e) => handleChange('Contact_Number', e.target.value)}
+              style={{ color: '#555555' }}
               className="w-full p-2 border border-gray-300 rounded text-sm font-arial h-10 box-border"
               required
             />
@@ -74,6 +78,7 @@ const CustomerInfoSection = ({ formData, onInputChange }) => {
             type="text"
             value={formData.Address}
             onChange={(e) => handleChange('Address', e.target.value)}
+            style={{ color: '#555555' }}
             className="w-full p-2 border border-gray-300 rounded text-sm font-arial h-10 box-border"
             required
           />
@@ -88,6 +93,7 @@ const CustomerInfoSection = ({ formData, onInputChange }) => {
               type="text"
               value={formData.City}
               onChange={(e) => handleChange('City', e.target.value)}
+              style={{ color: '#555555' }}
               className="w-full p-2 border border-gray-300 rounded text-sm font-arial h-10 box-border"
               required
             />
@@ -100,6 +106,7 @@ const CustomerInfoSection = ({ formData, onInputChange }) => {
               type="text"
               value={formData.State}
               onChange={(e) => handleChange('State', e.target.value)}
+              style={{ color: '#555555' }}
               className="w-full p-2 border border-gray-300 rounded text-sm font-arial h-10 box-border"
               required
             />
@@ -112,6 +119,7 @@ const CustomerInfoSection = ({ formData, onInputChange }) => {
               type="text"
               value={formData.Pin}
               onChange={(e) => handleChange('Pin', e.target.value)}
+              style={{ color: '#555555' }}
               className="w-full p-2 border border-gray-300 rounded text-sm font-arial h-10 box-border"
               required
             />
@@ -125,6 +133,7 @@ const CustomerInfoSection = ({ formData, onInputChange }) => {
               type="text"
               value={formData.Secondary_Contact}
               onChange={(e) => handleChange('Secondary_Contact', e.target.value)}
+              style={{ color: '#555555' }}
               className="w-full p-2 border border-gray-300 rounded text-sm font-arial h-10 box-border"
             />
           </div>
@@ -134,6 +143,7 @@ const CustomerInfoSection = ({ formData, onInputChange }) => {
               type="email"
               value={formData.Secondary_Email}
               onChange={(e) => handleChange('Secondary_Email', e.target.value)}
+              style={{ color: '#555555' }}
               className="w-full p-2 border border-gray-300 rounded text-sm font-arial h-10 box-border"
             />
           </div>
@@ -146,6 +156,7 @@ const CustomerInfoSection = ({ formData, onInputChange }) => {
               type="text"
               value={formData.Secondary_Company_Institution}
               onChange={(e) => handleChange('Secondary_Company_Institution', e.target.value)}
+              style={{ color: '#555555' }}
               className="w-full p-2 border border-gray-300 rounded text-sm font-arial h-10 box-border"
             />
           </div>
@@ -155,6 +166,7 @@ const CustomerInfoSection = ({ formData, onInputChange }) => {
               type="tel"
               value={formData.Secondary_Contact_Number}
               onChange={(e) => handleChange('Secondary_Contact_Number', e.target.value)}
+              style={{ color: '#555555' }}
               className="w-full p-2 border border-gray-300 rounded text-sm font-arial h-10 box-border"
             />
           </div>

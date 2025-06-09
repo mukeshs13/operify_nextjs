@@ -28,11 +28,12 @@ const BioinformaticsSection = ({ formData, onInputChange }) => {
             <select
               value={formData.Analysis_Requested}
               onChange={(e) => handleChange('Analysis_Requested', e.target.value)}
+              style={{ color: '#555555' }}
               className="w-full p-2 border border-gray-300 rounded text-sm font-arial h-10 box-border"
               required
             >
               {analysisOptions.map(option => (
-                <option key={option} value={option}>
+                <option key={option} value={option} style={{ color: '#555555' }}>
                   {option || 'Select'}
                 </option>
               ))}
@@ -44,6 +45,7 @@ const BioinformaticsSection = ({ formData, onInputChange }) => {
               type="text"
               value={formData.Analysis_Details}
               onChange={(e) => handleChange('Analysis_Details', e.target.value)}
+              style={{ color: '#555555' }}
               className="w-full p-2 border border-gray-300 rounded text-sm font-arial h-10 box-border"
             />
           </div>
@@ -57,11 +59,12 @@ const BioinformaticsSection = ({ formData, onInputChange }) => {
             <select
               value={formData.Reference_Genome_Available}
               onChange={(e) => handleChange('Reference_Genome_Available', e.target.value)}
+              style={{ color: '#555555' }}
               className="w-full p-2 border border-gray-300 rounded text-sm font-arial h-10 box-border"
               required
             >
               {genomeOptions.map(option => (
-                <option key={option} value={option}>
+                <option key={option} value={option} style={{ color: '#555555' }}>
                   {option || 'Select'}
                 </option>
               ))}
@@ -73,6 +76,7 @@ const BioinformaticsSection = ({ formData, onInputChange }) => {
               type="text"
               value={formData.Genome_Size}
               onChange={(e) => handleChange('Genome_Size', e.target.value)}
+              style={{ color: '#555555' }}
               className="w-full p-2 border border-gray-300 rounded text-sm font-arial h-10 box-border"
             />
           </div>
@@ -85,6 +89,7 @@ const BioinformaticsSection = ({ formData, onInputChange }) => {
           <textarea
             value={formData.Special_Consideration}
             onChange={(e) => handleChange('Special_Consideration', e.target.value)}
+            style={{ color: '#555555' }}
             className="w-full p-2 border border-gray-300 rounded text-sm font-arial box-border"
             rows={4}
             required

@@ -63,11 +63,12 @@ const ServiceInfoSection = ({ formData, onInputChange }) => {
             <select
               value={formData.Service_Requested}
               onChange={(e) => handleChange('Service_Requested', e.target.value)}
+              style={{ color: '#555555' }}
               className="w-full p-2 border border-gray-300 rounded text-sm font-arial h-10 box-border"
               required
             >
               {serviceOptions.map(option => (
-                <option key={option} value={option}>
+                <option key={option} value={option} style={{ color: '#555555' }}>
                   {option || 'Select'}
                 </option>
               ))}
@@ -79,6 +80,7 @@ const ServiceInfoSection = ({ formData, onInputChange }) => {
               type="text"
               value={formData.Service_Requested_Other}
               onChange={(e) => handleChange('Service_Requested_Other', e.target.value)}
+              style={{ color: '#555555' }}
               className="w-full p-2 border border-gray-300 rounded text-sm font-arial h-10 box-border"
             />
           </div>
@@ -92,11 +94,12 @@ const ServiceInfoSection = ({ formData, onInputChange }) => {
             <select
               value={formData.Type_of_Library}
               onChange={(e) => handleChange('Type_of_Library', e.target.value)}
+              style={{ color: '#555555' }}
               className="w-full p-2 border border-gray-300 rounded text-sm font-arial h-10 box-border"
               required
             >
               {libraryTypeOptions.map(option => (
-                <option key={option} value={option}>
+                <option key={option} value={option} style={{ color: '#555555' }}>
                   {option || 'Select'}
                 </option>
               ))}
@@ -108,6 +111,7 @@ const ServiceInfoSection = ({ formData, onInputChange }) => {
               type="text"
               value={formData.Type_of_Library_Other}
               onChange={(e) => handleChange('Type_of_Library_Other', e.target.value)}
+              style={{ color: '#555555' }}
               className="w-full p-2 border border-gray-300 rounded text-sm font-arial h-10 box-border"
             />
           </div>
@@ -121,11 +125,12 @@ const ServiceInfoSection = ({ formData, onInputChange }) => {
             <select
               value={formData.Required_Library_Size}
               onChange={(e) => handleChange('Required_Library_Size', e.target.value)}
+              style={{ color: '#555555' }}
               className="w-full p-2 border border-gray-300 rounded text-sm font-arial h-10 box-border"
               required
             >
               {librarySizeOptions.map(option => (
-                <option key={option} value={option}>
+                <option key={option} value={option} style={{ color: '#555555' }}>
                   {option || 'Select'}
                 </option>
               ))}
@@ -137,6 +142,7 @@ const ServiceInfoSection = ({ formData, onInputChange }) => {
               type="text"
               value={formData.Required_Library_Size_Other}
               onChange={(e) => handleChange('Required_Library_Size_Other', e.target.value)}
+              style={{ color: '#555555' }}
               className="w-full p-2 border border-gray-300 rounded text-sm font-arial h-10 box-border"
             />
           </div>
@@ -149,6 +155,7 @@ const ServiceInfoSection = ({ formData, onInputChange }) => {
               type="text"
               value={formData.Index_Information}
               onChange={(e) => handleChange('Index_Information', e.target.value)}
+              style={{ color: '#555555' }}
               className="w-full p-2 border border-gray-300 rounded text-sm font-arial h-10 box-border"
             />
           </div>
@@ -158,6 +165,7 @@ const ServiceInfoSection = ({ formData, onInputChange }) => {
               type="text"
               value={formData.Kit_Information}
               onChange={(e) => handleChange('Kit_Information', e.target.value)}
+              style={{ color: '#555555' }}
               className="w-full p-2 border border-gray-300 rounded text-sm font-arial h-10 box-border"
             />
           </div>
@@ -171,11 +179,12 @@ const ServiceInfoSection = ({ formData, onInputChange }) => {
             <select
               value={formData.Sequencing_Platform}
               onChange={(e) => handleChange('Sequencing_Platform', e.target.value)}
+              style={{ color: '#555555' }}
               className="w-full p-2 border border-gray-300 rounded text-sm font-arial h-10 box-border"
               required
             >
               {platformOptions.map(option => (
-                <option key={option} value={option}>
+                <option key={option} value={option} style={{ color: '#555555' }}>
                   {option || 'Select'}
                 </option>
               ))}
@@ -187,6 +196,7 @@ const ServiceInfoSection = ({ formData, onInputChange }) => {
               type="text"
               value={formData.Sequencing_Platform_Other}
               onChange={(e) => handleChange('Sequencing_Platform_Other', e.target.value)}
+              style={{ color: '#555555' }}
               className="w-full p-2 border border-gray-300 rounded text-sm font-arial h-10 box-border"
             />
           </div>
@@ -200,11 +210,12 @@ const ServiceInfoSection = ({ formData, onInputChange }) => {
             <select
               value={formData.Sequencing_Read_Length}
               onChange={(e) => handleChange('Sequencing_Read_Length', e.target.value)}
+              style={{ color: '#555555' }}
               className="w-full p-2 border border-gray-300 rounded text-sm font-arial h-10 box-border"
               required
             >
               {readLengthOptions.map(option => (
-                <option key={option} value={option}>
+                <option key={option} value={option} style={{ color: '#555555' }}>
                   {option || 'Select'}
                 </option>
               ))}
@@ -216,6 +227,7 @@ const ServiceInfoSection = ({ formData, onInputChange }) => {
               type="text"
               value={formData.Sequencing_Read_Length_Other}
               onChange={(e) => handleChange('Sequencing_Read_Length_Other', e.target.value)}
+              style={{ color: '#555555' }}
               className="w-full p-2 border border-gray-300 rounded text-sm font-arial h-10 box-border"
             />
           </div>
@@ -230,6 +242,7 @@ const ServiceInfoSection = ({ formData, onInputChange }) => {
               type="text"
               value={formData.Total_Data_Requirement}
               onChange={(e) => handleChange('Total_Data_Requirement', e.target.value)}
+              style={{ color: '#555555' }}
               className="w-full p-2 border border-gray-300 rounded text-sm font-arial h-10 box-border"
               required
             />
@@ -240,6 +253,7 @@ const ServiceInfoSection = ({ formData, onInputChange }) => {
               type="text"
               value={formData.Service_Remarks}
               onChange={(e) => handleChange('Service_Remarks', e.target.value)}
+              style={{ color: '#555555' }}
               className="w-full p-2 border border-gray-300 rounded text-sm font-arial h-10 box-border"
             />
           </div>

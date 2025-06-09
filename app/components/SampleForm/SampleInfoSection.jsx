@@ -29,6 +29,7 @@ const SampleInfoSection = ({ formData, onInputChange }) => {
             type="text"
             value={formData.Project_Title}
             onChange={(e) => handleChange('Project_Title', e.target.value)}
+            style={{ color: '#555555' }}
             className="w-full p-2 border border-gray-300 rounded text-sm font-arial h-10 box-border"
             required
           />
@@ -42,6 +43,7 @@ const SampleInfoSection = ({ formData, onInputChange }) => {
             type="text"
             value={formData.Number_of_Samples}
             onChange={(e) => handleChange('Number_of_Samples', e.target.value)}
+            style={{ color: '#555555' }}
             className="w-full p-2 border border-gray-300 rounded text-sm font-arial h-10 box-border"
             required
           />
@@ -55,11 +57,12 @@ const SampleInfoSection = ({ formData, onInputChange }) => {
             <select
               value={formData.Sample_Type}
               onChange={(e) => handleChange('Sample_Type', e.target.value)}
+              style={{ color: '#555555' }}
               className="w-full p-2 border border-gray-300 rounded text-sm font-arial h-10 box-border"
               required
             >
               {sampleTypeOptions.map(option => (
-                <option key={option} value={option}>
+                <option key={option} value={option} style={{ color: '#555555' }}>
                   {option || 'Select'}
                 </option>
               ))}
@@ -71,6 +74,7 @@ const SampleInfoSection = ({ formData, onInputChange }) => {
               type="text"
               value={formData.Sample_Type_Other}
               onChange={(e) => handleChange('Sample_Type_Other', e.target.value)}
+              style={{ color: '#555555' }}
               className="w-full p-2 border border-gray-300 rounded text-sm font-arial h-10 box-border"
             />
           </div>
@@ -84,11 +88,12 @@ const SampleInfoSection = ({ formData, onInputChange }) => {
             <select
               value={formData.Sample_Source}
               onChange={(e) => handleChange('Sample_Source', e.target.value)}
+              style={{ color: '#555555' }}
               className="w-full p-2 border border-gray-300 rounded text-sm font-arial h-10 box-border"
               required
             >
               {sampleSourceOptions.map(option => (
-                <option key={option} value={option}>
+                <option key={option} value={option} style={{ color: '#555555' }}>
                   {option || 'Select'}
                 </option>
               ))}
@@ -100,6 +105,7 @@ const SampleInfoSection = ({ formData, onInputChange }) => {
               type="text"
               value={formData.Sample_Source_Other}
               onChange={(e) => handleChange('Sample_Source_Other', e.target.value)}
+              style={{ color: '#555555' }}
               className="w-full p-2 border border-gray-300 rounded text-sm font-arial h-10 box-border"
             />
           </div>
@@ -114,6 +120,7 @@ const SampleInfoSection = ({ formData, onInputChange }) => {
               type="text"
               value={formData.Pathogenicity}
               onChange={(e) => handleChange('Pathogenicity', e.target.value)}
+              style={{ color: '#555555' }}
               className="w-full p-2 border border-gray-300 rounded text-sm font-arial h-10 box-border"
               required
             />
@@ -124,6 +131,7 @@ const SampleInfoSection = ({ formData, onInputChange }) => {
               type="text"
               value={formData.Sample_Remarks}
               onChange={(e) => handleChange('Sample_Remarks', e.target.value)}
+              style={{ color: '#555555' }}
               className="w-full p-2 border border-gray-300 rounded text-sm font-arial h-10 box-border"
             />
           </div>

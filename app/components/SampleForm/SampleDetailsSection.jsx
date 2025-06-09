@@ -65,6 +65,7 @@ const SampleDetailsSection = ({ sampleDetails, setSampleDetails }) => {
                     type="text"
                     value={sample.Serial_Number}
                     onChange={(e) => handleSampleChange(index, 'Serial_Number', e.target.value)}
+                    style={{ color: '#555555' }}
                     className="w-full text-xs h-8 p-1 border-none outline-none"
                   />
                 </td>
@@ -73,6 +74,7 @@ const SampleDetailsSection = ({ sampleDetails, setSampleDetails }) => {
                     type="text"
                     value={sample.Sample_Name}
                     onChange={(e) => handleSampleChange(index, 'Sample_Name', e.target.value)}
+                    style={{ color: '#555555' }}
                     className="w-full text-xs h-8 p-1 border-none outline-none"
                   />
                 </td>
@@ -81,6 +83,7 @@ const SampleDetailsSection = ({ sampleDetails, setSampleDetails }) => {
                     type="text"
                     value={sample.Storage_Temp}
                     onChange={(e) => handleSampleChange(index, 'Storage_Temp', e.target.value)}
+                    style={{ color: '#555555' }}
                     className="w-full text-xs h-8 p-1 border-none outline-none"
                   />
                 </td>
@@ -88,10 +91,11 @@ const SampleDetailsSection = ({ sampleDetails, setSampleDetails }) => {
                   <select
                     value={sample.Preservative_Reagent}
                     onChange={(e) => handleSampleChange(index, 'Preservative_Reagent', e.target.value)}
+                    style={{ color: '#555555' }}
                     className="w-full text-xs h-8 p-1 border-none outline-none"
                   >
                     {preservativeOptions.map(option => (
-                      <option key={option} value={option}>
+                      <option key={option} value={option} style={{ color: '#555555' }}>
                         {option || 'Select'}
                       </option>
                     ))}
@@ -101,10 +105,11 @@ const SampleDetailsSection = ({ sampleDetails, setSampleDetails }) => {
                   <select
                     value={sample.Temp_Information}
                     onChange={(e) => handleSampleChange(index, 'Temp_Information', e.target.value)}
+                    style={{ color: '#555555' }}
                     className="w-full text-xs h-8 p-1 border-none outline-none"
                   >
                     {tempOptions.map(option => (
-                      <option key={option} value={option}>
+                      <option key={option} value={option} style={{ color: '#555555' }}>
                         {option || 'Select'}
                       </option>
                     ))}
@@ -115,6 +120,7 @@ const SampleDetailsSection = ({ sampleDetails, setSampleDetails }) => {
                     type="text"
                     value={sample.Comments}
                     onChange={(e) => handleSampleChange(index, 'Comments', e.target.value)}
+                    style={{ color: '#555555' }}
                     className="w-full text-xs h-8 p-1 border-none outline-none"
                   />
                 </td>
@@ -145,6 +151,7 @@ const SampleDetailsSection = ({ sampleDetails, setSampleDetails }) => {
                   type="text"
                   value={sample.Serial_Number}
                   onChange={(e) => handleSampleChange(index, 'Serial_Number', e.target.value)}
+                  style={{ color: '#555555' }}
                   className="w-full p-2 border border-gray-300 rounded text-xs h-8"
                 />
               </div>
@@ -154,6 +161,7 @@ const SampleDetailsSection = ({ sampleDetails, setSampleDetails }) => {
                   type="text"
                   value={sample.Sample_Name}
                   onChange={(e) => handleSampleChange(index, 'Sample_Name', e.target.value)}
+                  style={{ color: '#555555' }}
                   className="w-full p-2 border border-gray-300 rounded text-xs h-8"
                 />
               </div>
@@ -163,6 +171,7 @@ const SampleDetailsSection = ({ sampleDetails, setSampleDetails }) => {
                   type="text"
                   value={sample.Storage_Temp}
                   onChange={(e) => handleSampleChange(index, 'Storage_Temp', e.target.value)}
+                  style={{ color: '#555555' }}
                   className="w-full p-2 border border-gray-300 rounded text-xs h-8"
                 />
               </div>
@@ -171,10 +180,11 @@ const SampleDetailsSection = ({ sampleDetails, setSampleDetails }) => {
                 <select
                   value={sample.Preservative_Reagent}
                   onChange={(e) => handleSampleChange(index, 'Preservative_Reagent', e.target.value)}
+                  style={{ color: '#555555' }}
                   className="w-full p-2 border border-gray-300 rounded text-xs h-8"
                 >
                   {preservativeOptions.map(option => (
-                    <option key={option} value={option}>
+                    <option key={option} value={option} style={{ color: '#555555' }}>
                       {option || 'Select'}
                     </option>
                   ))}
@@ -185,10 +195,11 @@ const SampleDetailsSection = ({ sampleDetails, setSampleDetails }) => {
                 <select
                   value={sample.Temp_Information}
                   onChange={(e) => handleSampleChange(index, 'Temp_Information', e.target.value)}
+                  style={{ color: '#555555' }}
                   className="w-full p-2 border border-gray-300 rounded text-xs h-8"
                 >
                   {tempOptions.map(option => (
-                    <option key={option} value={option}>
+                    <option key={option} value={option} style={{ color: '#555555' }}>
                       {option || 'Select'}
                     </option>
                   ))}
@@ -200,6 +211,7 @@ const SampleDetailsSection = ({ sampleDetails, setSampleDetails }) => {
                   type="text"
                   value={sample.Comments}
                   onChange={(e) => handleSampleChange(index, 'Comments', e.target.value)}
+                  style={{ color: '#555555' }}
                   className="w-full p-2 border border-gray-300 rounded text-xs h-8"
                 />
               </div>
