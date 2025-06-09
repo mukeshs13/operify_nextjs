@@ -110,6 +110,66 @@
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/dna-sequencing/enrichment-sequencing/whole-exome/page.js"
+    ],
+    "/rna-sequencing/mrna-sequencing/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/rna-sequencing/mrna-sequencing/page.js"
+    ],
+    "/rna-sequencing/metatranscriptomics-sequencing/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/rna-sequencing/metatranscriptomics-sequencing/page.js"
+    ],
+    "/dna-sequencing/enrichment-sequencing/amplicon-sequencing/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/dna-sequencing/enrichment-sequencing/amplicon-sequencing/page.js"
+    ],
+    "/rna-sequencing/single-cell-rna-sequencing/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/rna-sequencing/single-cell-rna-sequencing/page.js"
+    ],
+    "/dna-sequencing/epigenomics-sequencing/atac-sequencing/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/dna-sequencing/epigenomics-sequencing/atac-sequencing/page.js"
+    ],
+    "/dna-sequencing/epigenomics-sequencing/chip-sequencing/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/dna-sequencing/epigenomics-sequencing/chip-sequencing/page.js"
+    ],
+    "/dna-sequencing/epigenomics-sequencing/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/dna-sequencing/epigenomics-sequencing/page.js"
+    ],
+    "/dna-sequencing/epigenomics-sequencing/wgbs/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/dna-sequencing/epigenomics-sequencing/wgbs/page.js"
+    ],
+    "/dna-sequencing/genome-mapping/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/dna-sequencing/genome-mapping/page.js"
+    ],
+    "/dna-sequencing/genome-mapping/hi-c-mapping/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/dna-sequencing/genome-mapping/hi-c-mapping/page.js"
+    ],
+    "/dna-sequencing/hybrid-genome-sequencing/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/dna-sequencing/hybrid-genome-sequencing/page.js"
+    ],
+    "/_not-found/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/_not-found/page.js"
     ]
   }
 }

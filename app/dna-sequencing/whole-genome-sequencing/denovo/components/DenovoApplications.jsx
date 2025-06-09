@@ -32,7 +32,7 @@ const DenovoApplications = () => {
   return (
     <section className="py-5 lg:py-8 bg-gray-50">
       <div className="container-fluid px-4 lg:px-6">
-        <h2 className="text-2xl lg:text-3xl text-gray-700 text-left pb-2 mb-6 lg:mb-10">
+        <h2 className="text-2xl lg:text-3xl text-gray-700 text-left pb-2 mb-6 lg:mb-6">
           Applications of Whole Genome Denovo Sequencing
         </h2>
         

@@ -4,7 +4,7 @@ const LncRNABioinformatics = () => {
   return (
     <section className="py-8 lg:py-12 bg-gray-50">
       <div className="container mx-auto max-w-none px-4 lg:px-6">
-        <h2 className="text-2xl lg:text-3xl text-gray-700 text-left pb-2 mb-6 lg:mb-10">
+        <h2 className="text-2xl lg:text-3xl text-gray-700 text-left pb-2 mb-6 lg:mb-6">
           Bioinformatics Pipeline
         </h2>
         

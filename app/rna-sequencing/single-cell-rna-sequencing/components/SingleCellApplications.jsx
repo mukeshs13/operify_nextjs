@@ -25,10 +25,10 @@ const SingleCellApplications = () => {
   return (
     <section className="py-5 lg:py-8 bg-gray-50">
       <div className="container-fluid px-4 lg:px-6">
-        <h2 className="text-2xl lg:text-3xl text-gray-700 text-left pb-2 mb-6 lg:mb-10">
+        <h2 className="text-2xl lg:text-3xl text-gray-700 text-left pb-2 mb-6 lg:mb-6">
           Applications of Single Cell RNA Sequencing
         </h2>
-        <p className="text-gray-600 text-base mb-6 lg:mb-8">
+        <p className="text-gray-600 text-base mb-6 lg:mb-4">
           Single Cell RNA sequencing is widely utilized across plants, animals, and humans.
         </p>
         

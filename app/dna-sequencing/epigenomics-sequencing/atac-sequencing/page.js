@@ -19,7 +19,7 @@ export default function ATACSequencingPage() {
     <>
       <Header />
       <TitleBar
-        title="ATAC (Assay for Transposase-Accessible Chromatin) Sequencing - Chromatin for Gene Regulation Insights"
+        title="ATAC (Assay for Transposase-Accessible Chromatin) Sequencing"
         breadcrumbs={breadcrumbs}
       />
       

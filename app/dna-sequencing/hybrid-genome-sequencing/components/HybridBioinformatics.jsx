@@ -3,8 +3,8 @@
 const HybridBioinformatics = () => {
   return (
     <section className="py-8 lg:py-12 bg-gray-50">
-      <div className="container mx-auto px-4 lg:px-6">
-        <h2 className="text-gray-600 text-left pb-6 text-2xl lg:text-3xl font-semibold mb-8">
+      <div className="container mx-auto max-w-none px-4 lg:px-6">
+        <h2 className="text-gray-600 text-left pb-6 text-2xl lg:text-3xl font-normal mb-8">
           Bioinformatics Pipeline
         </h2>
         
