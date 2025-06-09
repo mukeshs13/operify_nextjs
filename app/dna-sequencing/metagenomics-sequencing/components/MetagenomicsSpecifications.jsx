@@ -77,7 +77,7 @@ const MetagenomicsSpecifications = () => {
             {specifications.map((spec, index) => (
               <article 
                 key={index}
-                className="p-6 h-full border-r border-gray-300 last:border-r-0 md:odd:border-r md:even:border-r-0 lg:border-r lg:last:border-r-0"
+                className="p-6 h-full border-r border-gray-300 last:border-r-0 md:odd:border-r md:even:border-r lg:border-r lg:last:border-r-0"
               >
                 <div className="h-full">
                   {/* Icon */}
