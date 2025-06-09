@@ -2,10 +2,10 @@
 
 const SingleCellIntroduction = () => {
   return (
-    <div className="bg-white py-16 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+    <div className="bg-white py-16">
+      <div className="max-w-none mx-auto px-6">
+        <div className="text-start mb-4">
+          <h2 className="text-2xl lg:text-3xl text-gray-700 text-left pb-2 ">
             Introduction and Workflow
           </h2>
         </div>
@@ -23,7 +23,7 @@ const SingleCellIntroduction = () => {
             </p>
 
             <p className="text-lg text-gray-700 leading-relaxed">
-              The <span className="bg-yellow-200 px-1 rounded">bioinformatics</span> pipeline includes data preprocessing, which involves quality control and normalization of the sequencing reads. The reads are then aligned to a reference genome or transcriptome to identify gene expression levels in each cell. Subsequent analysis involves clustering of cells based on expression profiles, differential gene expression analysis, and the identification of cell types and states.
+              The bioinformatics pipeline includes data preprocessing, which involves quality control and normalization of the sequencing reads. The reads are then aligned to a reference genome or transcriptome to identify gene expression levels in each cell. Subsequent analysis involves clustering of cells based on expression profiles, differential gene expression analysis, and the identification of cell types and states.
             </p>
 
             <p className="text-lg text-gray-700 leading-relaxed">

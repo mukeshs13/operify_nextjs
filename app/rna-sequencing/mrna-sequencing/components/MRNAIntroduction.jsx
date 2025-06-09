@@ -2,10 +2,10 @@
 
 const MRNAIntroduction = () => {
   return (
-    <div className="bg-white py-16 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+    <div className="bg-white py-16">
+      <div className="max-w-none mx-auto px-6">
+        <div className="text-start mb-4">
+          <h2 className="text-2xl lg:text-3xl text-gray-700 text-left pb-2">
             Introduction and Workflow
           </h2>
         </div>
@@ -23,7 +23,7 @@ const MRNAIntroduction = () => {
             </p>
 
             <p className="text-lg text-gray-700 leading-relaxed">
-              <strong>Bioinformatics analysis</strong> for mRNA-seq involves several key steps: data preprocessing, alignment to a reference genome, quantifying gene expression levels, and advanced downstream analyses such as differential expression, pathway enrichment, and gene ontology analysis.
+              Bioinformatics analysis for mRNA-seq involves several key steps: data preprocessing, alignment to a reference genome, quantifying gene expression levels, and advanced downstream analyses such as differential expression, pathway enrichment, and gene ontology analysis.
             </p>
 
             <p className="text-lg text-gray-700 leading-relaxed">

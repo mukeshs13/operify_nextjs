@@ -75,6 +75,46 @@
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/team-member-detail/page.js"
+    ],
+    "/rna-sequencing/small-rna-sequencing/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/rna-sequencing/small-rna-sequencing/page.js"
+    ],
+    "/rna-sequencing/circular-rna-sequencing/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/rna-sequencing/circular-rna-sequencing/page.js"
+    ],
+    "/rna-sequencing/iso-sequencing/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/rna-sequencing/iso-sequencing/page.js"
+    ],
+    "/rna-sequencing/degradome-sequencing/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/rna-sequencing/degradome-sequencing/page.js"
+    ],
+    "/rna-sequencing/lncrna-sequencing/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/rna-sequencing/lncrna-sequencing/page.js"
+    ],
+    "/dna-sequencing/enrichment-sequencing/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/dna-sequencing/enrichment-sequencing/page.js"
+    ],
+    "/dna-sequencing/enrichment-sequencing/whole-exome/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/dna-sequencing/enrichment-sequencing/whole-exome/page.js"
+    ],
+    "/_not-found/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/_not-found/page.js"
     ]
   }
 }

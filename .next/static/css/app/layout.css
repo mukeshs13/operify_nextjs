@@ -1611,6 +1611,9 @@ video {
 .text-justify {
   text-align: justify;
 }
+.text-start {
+  text-align: start;
+}
 .align-top {
   vertical-align: top;
 }
@@ -1882,6 +1885,11 @@ body {
 
 .last\:border-r-0:last-child {
   border-right-width: 0px;
+}
+
+
+.last\:border-r:last-child {
+  border-right-width: 1px;
 }
 
 
@@ -2501,6 +2509,10 @@ body {
   .md\:even\:border-r-0:nth-child(even) {
     border-right-width: 0px;
   }
+
+  .md\:even\:border-r:nth-child(even) {
+    border-right-width: 1px;
+  }
 }
 
 
@@ -2746,6 +2758,10 @@ body {
 
   .lg\:last\:border-r-0:last-child {
     border-right-width: 0px;
+  }
+
+  .lg\:last\:border-r:last-child {
+    border-right-width: 1px;
   }
 }
 

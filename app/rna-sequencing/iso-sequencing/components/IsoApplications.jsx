@@ -1,5 +1,3 @@
-// app/rna-sequencing/iso-sequencing/components/IsoApplications.jsx
-
 const IsoApplications = () => {
   const applications = [
     {
@@ -35,44 +33,38 @@ const IsoApplications = () => {
   ];
 
   return (
-    <div className="bg-white py-16 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-            Applications of Isoform Sequencing
-          </h2>
-          <p className="mt-4 text-lg text-gray-600">
-            LncRNA sequencing is widely utilized across{" "}
-            <span className="bg-orange-200 px-2 py-1 rounded">plants</span>,{" "}
-            <span className="bg-orange-200 px-2 py-1 rounded">animals</span>,{" "}
-            <span className="bg-orange-200 px-2 py-1 rounded">microbes</span>, and{" "}
-            <span className="bg-orange-200 px-2 py-1 rounded">humans</span>.
-          </p>
-        </div>
+    <section className="py-5 lg:py-8 bg-gray-50">
+      <div className="container-fluid px-4 lg:px-6">
+        <h2 className="text-2xl lg:text-3xl text-gray-700 text-left pb-2 mb-6 lg:mb-10">
+          Applications of Isoform Sequencing
+        </h2>
+        <p className="text-gray-600 text-base mb-6 lg:mb-8">
+          Isoform sequencing is widely utilized across plants, animals, microbes, and humans.
+        </p>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
           {applications.map((app, index) => (
-            <div key={index} className="flex items-start space-x-4 p-6 bg-gray-50 rounded-lg">
-              <div className="flex-shrink-0">
-                <div className="flex items-center justify-center w-10 h-10 bg-blue-600 text-white rounded-full font-bold">
-                  {app.number}
+            <div key={index} className="bg-white rounded-lg p-6 shadow-sm border border-gray-100">
+              <div className="flex items-start space-x-4">
+                <div className="flex-shrink-0">
+                  <span className="inline-flex items-center justify-center w-8 h-8 bg-teal-600 text-white rounded-full text-sm font-semibold">
+                    {app.number}
+                  </span>
                 </div>
-              </div>
-
-              <div className="flex-1">
-                <h3 className="text-xl font-semibold text-gray-900 mb-2">
-                  {app.title}
-                </h3>
-                
-                <p className="text-gray-700 leading-relaxed">
-                  {app.description}
-                </p>
+                <div className="flex-1">
+                  <h3 className="text-lg font-semibold text-teal-700 mb-3">
+                    {app.title}
+                  </h3>
+                  <p className="text-gray-600 leading-relaxed">
+                    {app.description}
+                  </p>
+                </div>
               </div>
             </div>
           ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

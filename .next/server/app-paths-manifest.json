@@ -1,7 +1,9 @@
 {
-  "/our-team/page": "app/our-team/page.js",
-  "/packaging-shipping-guideline/page": "app/packaging-shipping-guideline/page.js",
-  "/team-member-detail/page": "app/team-member-detail/page.js",
-  "/page": "app/page.js",
-  "/dna-sequencing/whole-genome-sequencing/page": "app/dna-sequencing/whole-genome-sequencing/page.js"
+  "/_not-found/page": "app/_not-found/page.js",
+  "/favicon.ico/route": "app/favicon.ico/route.js",
+  "/rna-sequencing/whole-transcriptome-sequencing/page": "app/rna-sequencing/whole-transcriptome-sequencing/page.js",
+  "/dna-sequencing/whole-genome-sequencing/page": "app/dna-sequencing/whole-genome-sequencing/page.js",
+  "/rna-sequencing/lncrna-sequencing/page": "app/rna-sequencing/lncrna-sequencing/page.js",
+  "/dna-sequencing/enrichment-sequencing/whole-exome/page": "app/dna-sequencing/enrichment-sequencing/whole-exome/page.js",
+  "/rna-sequencing/circular-rna-sequencing/page": "app/rna-sequencing/circular-rna-sequencing/page.js"
 }

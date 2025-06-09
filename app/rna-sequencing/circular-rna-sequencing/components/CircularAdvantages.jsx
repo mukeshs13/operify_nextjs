@@ -1,44 +1,40 @@
-// app/rna-sequencing/circular-rna-sequencing/components/CircularAdvantages.jsx
-
 const CircularAdvantages = () => {
   return (
-    <div className="bg-gray-50 py-16 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-            Advantages of Circular RNA Sequencing
-          </h2>
-        </div>
+    <section className="py-5 lg:py-8 bg-gradient-to-br from-white to-white rounded-2xl shadow-sm">
+      <div className="container-fluid px-4 lg:px-6">
+        <h2 className="text-2xl lg:text-3xl text-gray-700 text-left pb-2 mb-6 lg:mb-10">
+          Advantages of Circular RNA Sequencing
+        </h2>
         
         {/* Enhanced stability */}
-        <div className="mb-8 p-6 bg-white rounded-lg shadow-sm">
-          <p className="text-lg text-gray-700 leading-relaxed">
-            <strong>Circular RNAs are inherently more stable</strong> due to their covalently closed structure, making them less susceptible to degradation and providing reliable expression data.
+        <div className="mb-6 lg:mb-8 text-justify">
+          <p className="text-gray-600 text-base leading-relaxed">
+            Circular RNAs are inherently more stable due to their covalently closed structure, making them less susceptible to degradation and providing reliable expression data.
           </p>
         </div>
 
         {/* Novel identification */}
-        <div className="mb-8 p-6 bg-white rounded-lg shadow-sm">
-          <p className="text-lg text-gray-700 leading-relaxed">
-            <strong>Enables the identification of novel isoforms and splice variants</strong> that may not be detected with traditional RNA sequencing methods.
+        <div className="mb-6 lg:mb-8 text-justify">
+          <p className="text-gray-600 text-base leading-relaxed">
+            Enables the identification of novel isoforms and splice variants that may not be detected with traditional RNA sequencing methods.
           </p>
         </div>
 
         {/* Detailed expression view */}
-        <div className="mb-8 p-6 bg-white rounded-lg shadow-sm">
-          <p className="text-lg text-gray-700 leading-relaxed">
-            <strong>Offers a detailed view of circular RNA expression</strong> and their interactions within the cell, aiding in a deeper understanding of gene regulation and cellular processes.
+        <div className="mb-6 lg:mb-8 text-justify">
+          <p className="text-gray-600 text-base leading-relaxed">
+            Offers a detailed view of circular RNA expression and their interactions within the cell, aiding in a deeper understanding of gene regulation and cellular processes.
           </p>
         </div>
 
         {/* Minimized artifacts */}
-        <div className="mb-8 p-6 bg-white rounded-lg shadow-sm">
-          <p className="text-lg text-gray-700 leading-relaxed">
-            <strong>Closed-loop structure of circRNAs minimizes potential sequencing artifacts,</strong> leading to more accurate and consistent data.
+        <div className="text-justify">
+          <p className="text-gray-600 text-base leading-relaxed">
+            Closed-loop structure of circRNAs minimizes potential sequencing artifacts, leading to more accurate and consistent data.
           </p>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
