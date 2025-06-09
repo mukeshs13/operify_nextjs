@@ -1,7 +1,7 @@
 {
-  "/samples-form/page": "app/samples-form/page.js",
-  "/sample-submission-guideline/page": "app/sample-submission-guideline/page.js",
   "/packaging-shipping-guideline/page": "app/packaging-shipping-guideline/page.js",
   "/team-member-detail/page": "app/team-member-detail/page.js",
-  "/our-team/page": "app/our-team/page.js"
+  "/our-team/page": "app/our-team/page.js",
+  "/page": "app/page.js",
+  "/dna-sequencing/whole-genome-sequencing/page": "app/dna-sequencing/whole-genome-sequencing/page.js"
 }
