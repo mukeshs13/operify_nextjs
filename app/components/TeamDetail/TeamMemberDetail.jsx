@@ -14,7 +14,7 @@ const TeamMemberDetail = ({ memberData }) => {
         <TeamMemberHero memberName={memberData.name} />
         
         <section className="py-12">
-          <div className="container mx-auto px-4">
+          <div className="container mx-auto max-w-none px-6">
             <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
               {/* Sidebar - Member Info */}
               <div className="lg:col-span-1">

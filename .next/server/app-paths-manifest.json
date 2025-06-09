@@ -1,7 +1,7 @@
 {
-  "/dna-sequencing/whole-genome-sequencing/page": "app/dna-sequencing/whole-genome-sequencing/page.js",
-  "/rna-sequencing/whole-transcriptome-sequencing/page": "app/rna-sequencing/whole-transcriptome-sequencing/page.js",
-  "/sample-initiation-form/page": "app/sample-initiation-form/page.js",
   "/samples-form/page": "app/samples-form/page.js",
-  "/sample-submission-guideline/page": "app/sample-submission-guideline/page.js"
+  "/sample-submission-guideline/page": "app/sample-submission-guideline/page.js",
+  "/packaging-shipping-guideline/page": "app/packaging-shipping-guideline/page.js",
+  "/team-member-detail/page": "app/team-member-detail/page.js",
+  "/our-team/page": "app/our-team/page.js"
 }
