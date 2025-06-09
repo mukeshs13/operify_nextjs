@@ -5,7 +5,7 @@ import SubmissionOptions from './SubmissionOptions';
 const ProcessSection = () => {
   return (
     <section className="bg-white">
-      <div className="container">
+      <div className="container mx-auto max-w-none px-4">
         <div className="bg-white p-4 md:p-6">
           {/* Main Title */}
           <div className="text-left mb-8">

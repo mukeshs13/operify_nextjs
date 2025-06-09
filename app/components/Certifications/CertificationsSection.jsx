@@ -31,10 +31,10 @@ const CertificationModal = ({ isOpen, onClose, certificateImage, title }) => {
 };
 
 const CertificationCard = ({ title, description, certificateLink, onOpenModal }) => (
-  <div className="text-center relative group">
+  <div className="relative group">
     <div className="p-5 rounded-3xl shadow-sm hover:shadow-lg transition-all duration-300 h-full flex flex-col justify-between" style={{ backgroundColor: '#f2fcfc' }}>
       <div>
-        <h3 className="text-lg font-semibold text-teal-700 mb-3 leading-tight">{title}</h3>
+        <h3 className="text-lg font-semibold text-teal-700 mb-3 leading-tight text-left">{title}</h3>
         <p className="text-gray-600 leading-relaxed text-sm mb-5 text-justify">{description}</p>
       </div>
       

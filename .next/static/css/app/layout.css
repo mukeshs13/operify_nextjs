@@ -1635,6 +1635,9 @@ video {
 .text-justify {
   text-align: justify;
 }
+.text-start {
+  text-align: start;
+}
 .align-top {
   vertical-align: top;
 }
@@ -2534,6 +2537,10 @@ body {
     margin-top: 0.75rem;
   }
 
+  .lg\:mt-4 {
+    margin-top: 1rem;
+  }
+
   .lg\:flex {
     display: flex;
   }
@@ -2769,6 +2776,11 @@ body {
   .xl\:text-5xl {
     font-size: 3rem;
     line-height: 1;
+  }
+
+  .xl\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
   }
 }
 

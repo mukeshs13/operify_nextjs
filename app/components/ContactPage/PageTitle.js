@@ -24,7 +24,7 @@ const PageTitle = () => {
       
       {/* Page Title */}
       <div className="relative z-10 text-center -mt-2">
-        <h1 className="text-4xl md:text-5xl font-bold text-white mb-2">
+        <h1 className="text-4xl md:text-4xl font-bold text-white mb-2">
           Contact Us
         </h1>
         <div className="w-16 h-1 bg-yellow-400 mx-auto"></div>

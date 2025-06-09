@@ -156,16 +156,16 @@ const ShippingTemperatureTable = () => {
             <tbody>
               {shippingData.map((row, index) => (
                 <tr key={index} className={index % 2 === 1 ? 'bg-gray-50' : 'bg-white'}>
-                  <td className="border border-gray-300 px-3 py-2 align-top">
+                  <td className="border border-gray-300 px-3 py-2 align-top" style={{ color: '#555555' }}>
                     <div className="flex items-start">
                       <span>{row.sampleType}</span>
                       <TooltipIcon text={row.tooltip} rowIndex={index} totalRows={shippingData.length} />
                     </div>
                   </td>
-                  <td className="border border-gray-300 px-3 py-2 align-top">
+                  <td className="border border-gray-300 px-3 py-2 align-top" style={{ color: '#555555' }}>
                     {row.volume}
                   </td>
-                  <td className="border border-gray-300 px-3 py-2 align-top">
+                  <td className="border border-gray-300 px-3 py-2 align-top" style={{ color: '#555555' }}>
                     {row.conditions}
                   </td>
                 </tr>

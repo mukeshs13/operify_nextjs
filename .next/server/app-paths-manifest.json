@@ -1,3 +1,7 @@
 {
-  "/page": "app/page.js"
+  "/rna-sequencing/whole-transcriptome-sequencing/page": "app/rna-sequencing/whole-transcriptome-sequencing/page.js",
+  "/sample-initiation-form/page": "app/sample-initiation-form/page.js",
+  "/dna-sequencing/whole-genome-sequencing/page": "app/dna-sequencing/whole-genome-sequencing/page.js",
+  "/sample-submission-guideline/page": "app/sample-submission-guideline/page.js",
+  "/samples-form/page": "app/samples-form/page.js"
 }

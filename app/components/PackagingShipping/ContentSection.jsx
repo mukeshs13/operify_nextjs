@@ -26,7 +26,7 @@ const ContentSection = () => {
 
   return (
     <section className="bg-white py-5">
-      <div className="container mx-auto px-4 xl:px-8">
+      <div className="container mx-auto max-w-none px-4 xl:px-8">
         <div className="bg-white p-4 md:p-6">
           <div className="grid xl:grid-cols-[280px_1fr] gap-8">
             {/* LEFT SIDEBAR */}

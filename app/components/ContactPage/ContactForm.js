@@ -186,7 +186,7 @@ const ContactForm = () => {
               name="message"
               value={formData.message}
               onChange={handleInputChange}
-              rows={6}
+              rows={3}
               placeholder="Project description"
               required
               className="w-full px-5 py-4 bg-white border border-teal-400 rounded-2xl focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent resize-vertical placeholder-gray-500"

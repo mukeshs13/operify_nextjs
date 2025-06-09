@@ -60,11 +60,12 @@ const SearchFilters = ({ filters, onFilterChange, onSearch, onReset, isSearchEna
           <select
             value={filters.nucleicAcid}
             onChange={(e) => onFilterChange('nucleicAcid', e.target.value)}
+            style={{ color: '#555555' }}
             className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
           >
-            <option value="">Select</option>
+            <option value="" style={{ color: '#555555' }}>Select</option>
             {availableOptions.nucleicAcid.map(option => (
-              <option key={option} value={option}>{option}</option>
+              <option key={option} value={option} style={{ color: '#555555' }}>{option}</option>
             ))}
           </select>
         </div>
@@ -78,11 +79,12 @@ const SearchFilters = ({ filters, onFilterChange, onSearch, onReset, isSearchEna
             value={filters.category}
             onChange={(e) => onFilterChange('category', e.target.value)}
             disabled={!filters.nucleicAcid}
+            style={{ color: '#555555' }}
             className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent disabled:bg-gray-100 disabled:cursor-not-allowed"
           >
-            <option value="">{filters.nucleicAcid ? 'Select' : 'Select Previous Option First'}</option>
+            <option value="" style={{ color: '#555555' }}>{filters.nucleicAcid ? 'Select' : 'Select Previous Option First'}</option>
             {availableOptions.category.map(option => (
-              <option key={option} value={option}>{option}</option>
+              <option key={option} value={option} style={{ color: '#555555' }}>{option}</option>
             ))}
           </select>
         </div>
@@ -97,11 +99,12 @@ const SearchFilters = ({ filters, onFilterChange, onSearch, onReset, isSearchEna
             value={filters.application}
             onChange={(e) => onFilterChange('application', e.target.value)}
             disabled={!filters.category}
+            style={{ color: '#555555' }}
             className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent disabled:bg-gray-100 disabled:cursor-not-allowed"
           >
-            <option value="">{filters.category ? 'Select' : 'Select Previous Option First'}</option>
+            <option value="" style={{ color: '#555555' }}>{filters.category ? 'Select' : 'Select Previous Option First'}</option>
             {availableOptions.application.map(option => (
-              <option key={option} value={option}>{option}</option>
+              <option key={option} value={option} style={{ color: '#555555' }}>{option}</option>
             ))}
           </select>
         </div>
@@ -116,11 +119,12 @@ const SearchFilters = ({ filters, onFilterChange, onSearch, onReset, isSearchEna
             value={filters.sampleType}
             onChange={(e) => onFilterChange('sampleType', e.target.value)}
             disabled={!filters.application}
+            style={{ color: '#555555' }}
             className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent disabled:bg-gray-100 disabled:cursor-not-allowed"
           >
-            <option value="">{filters.application ? 'Select' : 'Select Previous Option First'}</option>
+            <option value="" style={{ color: '#555555' }}>{filters.application ? 'Select' : 'Select Previous Option First'}</option>
             {availableOptions.sampleType.map(option => (
-              <option key={option} value={option}>{option}</option>
+              <option key={option} value={option} style={{ color: '#555555' }}>{option}</option>
             ))}
           </select>
         </div>

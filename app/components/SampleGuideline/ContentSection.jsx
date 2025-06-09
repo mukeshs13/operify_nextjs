@@ -18,7 +18,7 @@ const ContentSection = () => {
 
   return (
     <section className="pt-4 pb-8">
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto max-w-none px-4">
         <div className="grid xl:grid-cols-[280px_1fr] gap-8">
           {/* LEFT SIDEBAR */}
           <div className="xl:sticky xl:top-8">
