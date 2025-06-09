@@ -22,14 +22,7 @@ const ResearchCard = ({ image, title, description }) => (
       <p className="text-gray-600 leading-relaxed text-sm text-justify pr-4 sm:pr-0">{description}</p>
     </div>
     
-    {/* Arrow Button */}
-    <div className="absolute bottom-4 right-4 sm:bottom-6 sm:right-6">
-      <button className="w-8 h-8 sm:w-10 sm:h-10 bg-teal-700 text-white rounded-full flex items-center justify-center hover:bg-teal-800 transition-all duration-300 hover:scale-110 group-hover:shadow-lg">
-        <svg className="w-3 h-3 sm:w-4 sm:h-4 transform group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-        </svg>
-      </button>
-    </div>
+    
   </div>
 );
 
@@ -59,7 +52,7 @@ const ResearchSection = () => {
 
   return (
     <section id="research" className="py-6 sm:py-8 bg-white">
-      <div className="container mx-auto px-4 sm:px-6 max-w-7xl">
+      <div className="container mx-auto max-w-none px-6">
         <div className="mb-8">
           <h2 className="text-4xl font-bold text-teal-700 mb-4">Research</h2>
         </div>

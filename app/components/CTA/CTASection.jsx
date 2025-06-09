@@ -4,7 +4,7 @@ import Image from 'next/image';
 const CTASection = () => {
   return (
     <section className="py-6">
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto max-w-none px-6">
         <div className="rounded-3xl p-8 lg:p-12 text-center" style={{ backgroundColor: '#2a6564' }}>
           <h2 className="text-3xl lg:text-4xl font-bold text-white mb-8">
             Feeling Overwhelmed About Designing Your Experiment?

@@ -2,7 +2,7 @@ import React from "react";
 
 const HeroSection = () => {
   return (
-    <section className="relative h-screen overflow-hidden rounded-3xl m-6">
+    <section className="relative h-[40rem] overflow-hidden rounded-3xl m-6">
       {/* Background Video */}
       <video
         autoPlay

@@ -52,7 +52,7 @@ const AdvantagesSection = () => {
 
   return (
     <section className="py-6 bg-white">
-      <div className="container mx-auto px-6 max-w-7xl">
+      <div className="container mx-auto max-w-none px-6">
         <div className="mb-8">
           <h2 className="text-4xl font-bold text-teal-700 mb-4">Advantages of NGS</h2>
         </div>

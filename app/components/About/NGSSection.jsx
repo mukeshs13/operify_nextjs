@@ -5,8 +5,8 @@ import Link from "next/link";
 const NGSSection = () => {
   return (
     <section className="py-10 bg-white">
-      <div className="container mx-auto px-6 max-w-7xl">
-        <div className="flex flex-col lg:flex-row items-center gap-12">
+      <div className="px-6">
+        <div className="flex flex-col lg:flex-row items-center justify-center gap-12">
           {/* Left Image */}
           <div className="lg:w-1/2">
             <Image

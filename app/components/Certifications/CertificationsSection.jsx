@@ -88,7 +88,7 @@ const CertificationsSection = () => {
   return (
     <>
       <section className="py-6 bg-white">
-        <div className="container mx-auto px-6 max-w-7xl">
+        <div className="container mx-auto max-w-none px-6">
           <div className="mb-12">
             <h2 className="text-4xl font-bold text-teal-700 mb-6">Certifications</h2>
             <p className="text-gray-600 leading-relaxed text-base text-justify max-w-4xl">
