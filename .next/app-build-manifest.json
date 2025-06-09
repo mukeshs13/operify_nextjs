@@ -166,6 +166,11 @@
       "static/chunks/main-app.js",
       "static/chunks/app/dna-sequencing/hybrid-genome-sequencing/page.js"
     ],
+    "/dna-sequencing/long-read-sequencing/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/dna-sequencing/long-read-sequencing/page.js"
+    ],
     "/_not-found/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
