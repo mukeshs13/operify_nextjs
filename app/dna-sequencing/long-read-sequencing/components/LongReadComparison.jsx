@@ -32,9 +32,35 @@ const LongReadComparison = () => {
     }
   ];
 
+  const formatContent = (content, isHighlighted = false) => {
+    if (content.includes("Long Read Length")) {
+      return (
+        <div>
+          <span className="text-blue-600 font-medium">Long Read Length with High Accuracy</span>
+          {content.replace("Long Read Length with High Accuracy", "")}
+        </div>
+      );
+    } else if (content.includes("NO GC Bias")) {
+      return (
+        <div>
+          <span className="text-blue-600 font-medium">NO GC Bias & Amplification Bias</span>
+          {content.replace("NO GC Bias & Amplification Bias", "")}
+        </div>
+      );
+    } else if (content.includes("Simultaneous")) {
+      return (
+        <div>
+          <span className="text-blue-600 font-medium">Simultaneous Epigenetic Characterization</span>
+          {content.replace("Simultaneous Epigenetic Characterization", "")}
+        </div>
+      );
+    }
+    return content;
+  };
+
   return (
     <section className="py-12 bg-white">
-      <div className="container-fluid px-6 lg:px-12">
+      <div className="container-fluid px-4 lg:px-12">
         <h2 className="text-2xl lg:text-3xl text-gray-700 mb-8">
           Comparison of Sequencers
         </h2>
@@ -47,7 +73,6 @@ const LongReadComparison = () => {
               alt="Long Read Comparison Chart"
               className="w-full max-w-4xl mx-auto rounded-lg border shadow-md"
             />
-            
           </div>
         </div>
 
@@ -59,88 +84,81 @@ const LongReadComparison = () => {
         </div>
         
         <div className="flex flex-col xl:flex-row gap-8">
-          {/* Left side - Comparison Table */}
-          <div className="flex-1">
-            <div className="overflow-x-auto">
-              <table className="w-full border-collapse border border-gray-300 bg-white shadow-lg rounded-lg">
-                <thead>
-                  <tr className="bg-gray-100">
-                    <th className="border border-gray-300 p-3 text-left font-semibold text-gray-700 min-w-[120px]">
-                      Platform Types
-                    </th>
-                    <th className="border border-gray-300 p-3 text-center font-semibold text-gray-700 min-w-[180px]">
-                      Illumina NovaSeq 6000
-                    </th>
-                    <th className="border border-gray-300 p-3 text-center font-semibold text-gray-700 min-w-[160px]">
-                      PacBio Sequel II/IIe
-                    </th>
-                    <th className="border border-gray-300 p-3 text-center font-semibold text-gray-700 min-w-[160px]">
-                      Nanopore PromethION
-                    </th>
+          {/* Mobile Card Layout (hidden on desktop) */}
+          <div className="xl:hidden space-y-6">
+            {comparisonData.map((row, index) => (
+              <div key={index} className="bg-white border border-gray-300 rounded-lg shadow-sm">
+                <div className="bg-gray-100 px-4 py-3 rounded-t-lg">
+                  <h4 className="font-semibold text-gray-700">{row.category}</h4>
+                </div>
+                <div className="p-4 space-y-4">
+                  <div className="border-b border-gray-200 pb-3">
+                    <h5 className="font-medium text-sm text-gray-600 mb-2">Illumina NovaSeq 6000</h5>
+                    <div className="text-sm text-gray-600 whitespace-pre-line leading-relaxed">
+                      {row.illumina}
+                    </div>
+                  </div>
+                  <div className="border-b border-gray-200 pb-3">
+                    <h5 className="font-medium text-sm text-gray-600 mb-2">PacBio Sequel II/IIe</h5>
+                    <div className="text-sm text-gray-600 whitespace-pre-line leading-relaxed">
+                      {formatContent(row.pacbio)}
+                    </div>
+                  </div>
+                  <div>
+                    <h5 className="font-medium text-sm text-gray-600 mb-2">Nanopore PromethION</h5>
+                    <div className="text-sm text-gray-600 whitespace-pre-line leading-relaxed">
+                      {formatContent(row.nanopore)}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          {/* Desktop Table Layout (hidden on mobile) */}
+          <div className="hidden xl:flex flex-1">
+            <table className="w-full border-collapse border border-gray-300 bg-white shadow-lg rounded-lg">
+              <thead>
+                <tr className="bg-gray-100">
+                  <th className="border border-gray-300 p-3 text-left font-semibold text-gray-700">
+                    Platform Types
+                  </th>
+                  <th className="border border-gray-300 p-3 text-center font-semibold text-gray-700">
+                    Illumina NovaSeq 6000
+                  </th>
+                  <th className="border border-gray-300 p-3 text-center font-semibold text-gray-700">
+                    PacBio Sequel II/IIe
+                  </th>
+                  <th className="border border-gray-300 p-3 text-center font-semibold text-gray-700">
+                    Nanopore PromethION
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                {comparisonData.map((row, index) => (
+                  <tr key={index} className={index % 2 === 0 ? "bg-white" : "bg-gray-50"}>
+                    <td className="border border-gray-300 p-3 font-medium text-gray-700 bg-gray-50">
+                      {row.category}
+                    </td>
+                    <td className="border border-gray-300 p-3 text-sm text-gray-600">
+                      <div className="whitespace-pre-line leading-relaxed">
+                        {row.illumina}
+                      </div>
+                    </td>
+                    <td className="border border-gray-300 p-3 text-sm text-gray-600">
+                      <div className="whitespace-pre-line leading-relaxed">
+                        {formatContent(row.pacbio)}
+                      </div>
+                    </td>
+                    <td className="border border-gray-300 p-3 text-sm text-gray-600">
+                      <div className="whitespace-pre-line leading-relaxed">
+                        {formatContent(row.nanopore)}
+                      </div>
+                    </td>
                   </tr>
-                </thead>
-                <tbody>
-                  {comparisonData.map((row, index) => (
-                    <tr key={index} className={index % 2 === 0 ? "bg-white" : "bg-gray-50"}>
-                      <td className="border border-gray-300 p-3 font-medium text-gray-700 bg-gray-50">
-                        {row.category}
-                      </td>
-                      <td className="border border-gray-300 p-3 text-sm text-gray-600">
-                        <div className="whitespace-pre-line leading-relaxed">
-                          {row.illumina}
-                        </div>
-                      </td>
-                      <td className="border border-gray-300 p-3 text-sm text-gray-600">
-                        <div className="whitespace-pre-line leading-relaxed">
-                          {row.pacbio.includes("Long Read Length") ? (
-                            <div>
-                              <span className="text-blue-600 font-medium">Long Read Length with High Accuracy</span>
-                              {row.pacbio.replace("Long Read Length with High Accuracy", "")}
-                            </div>
-                          ) : row.pacbio.includes("NO GC Bias") ? (
-                            <div>
-                              <span className="text-blue-600 font-medium">NO GC Bias & Amplification Bias</span>
-                              {row.pacbio.replace("NO GC Bias & Amplification Bias", "")}
-                            </div>
-                          ) : row.pacbio.includes("Simultaneous") ? (
-                            <div>
-                              <span className="text-blue-600 font-medium">Simultaneous Epigenetic Characterization</span>
-                              {row.pacbio.replace("Simultaneous Epigenetic Characterization", "")}
-                            </div>
-                          ) : (
-                            row.pacbio
-                          )}
-                        </div>
-                      </td>
-                      <td className="border border-gray-300 p-3 text-sm text-gray-600">
-                        <div className="whitespace-pre-line leading-relaxed">
-                          {row.nanopore.includes("Long Read Length") ? (
-                            <div>
-                              <span className="text-blue-600 font-medium">Long Read Length with High Accuracy</span>
-                              {row.nanopore.replace("Long Read Length with High Accuracy", "")}
-                            </div>
-                          ) : row.nanopore.includes("NO GC Bias") ? (
-                            <div>
-                              <span className="text-blue-600 font-medium">NO GC Bias & Amplification Bias</span>
-                              {row.nanopore.replace("NO GC Bias & Amplification Bias", "")}
-                            </div>
-                          ) : row.nanopore.includes("Simultaneous") ? (
-                            <div>
-                              <span className="text-blue-600 font-medium">Simultaneous Epigenetic Characterization</span>
-                              {row.nanopore.replace("Simultaneous Epigenetic Characterization", "")}
-                            </div>
-                          ) : (
-                            row.nanopore
-                          )}
-                        </div>
-                      </td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
-            </div>
-            
-            
+                ))}
+              </tbody>
+            </table>
           </div>
 
           {/* Right side - Key Highlights */}

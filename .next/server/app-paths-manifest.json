@@ -1,7 +1,9 @@
 {
-  "/page": "app/page.js",
+  "/_not-found/page": "app/_not-found/page.js",
+  "/favicon.ico/route": "app/favicon.ico/route.js",
   "/dna-sequencing/hybrid-genome-sequencing/page": "app/dna-sequencing/hybrid-genome-sequencing/page.js",
   "/dna-sequencing/whole-genome-sequencing/page": "app/dna-sequencing/whole-genome-sequencing/page.js",
   "/contact-us/page": "app/contact-us/page.js",
+  "/page": "app/page.js",
   "/dna-sequencing/long-read-sequencing/page": "app/dna-sequencing/long-read-sequencing/page.js"
 }
