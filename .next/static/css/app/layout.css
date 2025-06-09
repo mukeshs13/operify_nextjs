@@ -2563,6 +2563,10 @@ body {
     margin-top: 1rem;
   }
 
+  .lg\:mt-2 {
+    margin-top: 0.5rem;
+  }
+
   .lg\:flex {
     display: flex;
   }

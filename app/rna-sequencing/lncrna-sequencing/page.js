@@ -20,7 +20,7 @@ export default function LncRNASequencingPage() {
     <div>
       <Header />
       <TitleBar 
-        title="lncRNA Sequencing"
+        title="LncRNA Sequencing"
         breadcrumbs={breadcrumbs}
       />
       <LncRNAIntroduction />

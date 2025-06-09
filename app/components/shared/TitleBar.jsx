@@ -40,7 +40,7 @@ const TitleBar = ({ title, breadcrumbs, backgroundImage = "/images/bredcrumb.jpg
       </div>
       
       {/* Page Title */}
-      <div className="relative z-10 text-center pb-2 sm:pb-0 sm:-mt-2 lg:-mt-2">
+      <div className="relative z-10 text-center pb-2 sm:pb-0 sm:-mt-2 lg:mt-2">
         <h1 className="text-base sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-bold text-white mb-2 px-4 leading-tight">
           {title}
         </h1>
