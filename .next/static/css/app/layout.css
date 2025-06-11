@@ -2681,6 +2681,11 @@ body {
     padding-bottom: 2rem;
   }
 
+  .lg\:py-10 {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+
   .lg\:text-left {
     text-align: left;
   }

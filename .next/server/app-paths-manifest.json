@@ -1,7 +1,8 @@
 {
+  "/_not-found/page": "app/_not-found/page.js",
   "/rna-sequencing/mrna-sequencing/page": "app/rna-sequencing/mrna-sequencing/page.js",
   "/dna-sequencing/whole-genome-sequencing/page": "app/dna-sequencing/whole-genome-sequencing/page.js",
-  "/dna-sequencing/long-read-sequencing/page": "app/dna-sequencing/long-read-sequencing/page.js",
+  "/dna-sequencing/enrichment-sequencing/whole-exome/page": "app/dna-sequencing/enrichment-sequencing/whole-exome/page.js",
   "/dna-sequencing/single-cell-dna-sequencing/page": "app/dna-sequencing/single-cell-dna-sequencing/page.js",
-  "/dna-sequencing/enrichment-sequencing/whole-exome/page": "app/dna-sequencing/enrichment-sequencing/whole-exome/page.js"
+  "/dna-sequencing/long-read-sequencing/page": "app/dna-sequencing/long-read-sequencing/page.js"
 }

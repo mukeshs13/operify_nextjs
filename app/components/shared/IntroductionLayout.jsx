@@ -11,7 +11,7 @@ const IntroductionLayout = ({
   badgeColor = "bg-teal-600"
 }) => {
   return (
-    <section className="py-0 md:py-12 lg:py-16">
+    <section className="py-0 md:py-12 lg:py-10">
       <div className="container-fluid px-0">
         <h2 className="text-2xl lg:text-3xl text-gray-700 text-left pb-2 px-4 lg:px-8 mb-4">
           {title}
