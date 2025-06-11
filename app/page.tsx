@@ -1,7 +1,7 @@
 
 import Header from "./components/Layout/Header";
 import NGSSection from "./components/About/NGSSection";
-import AdvantagesSection from "./components/Advantages/AdvantagesSection";
+// import AdvantagesSection from "./components/Advantages/AdvantagesSection";
 import ResearchSection from "./components/Research/ResearchSection.jsx";
 import CertificationsSection from "./components/Certifications/CertificationsSection.jsx";
 import HeroSection from "./Hero/HeroSection.jsx";
