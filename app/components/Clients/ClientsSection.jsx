@@ -56,7 +56,7 @@ const ClientsSection = () => {
   }, [itemWidth, singleSetWidth]);
 
   return (
-    <section className="py-16 bg-gray-50">
+    <section className="py-16 bg-gray-100">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold text-teal-700 mb-6">
@@ -92,9 +92,9 @@ const ClientsSection = () => {
                   <Image 
                     src={client.logo} 
                     alt={client.name} 
-                    width={150} 
-                    height={75}
-                    className="w-32 h-16 object-contain hover:scale-105 transition-transform duration-300"
+                    width={300} 
+                    height={150}
+                    className="w-[10rem] h-[6rem] object-contain hover:scale-105 transition-transform duration-300"
                   />
                 </div>
               </div>

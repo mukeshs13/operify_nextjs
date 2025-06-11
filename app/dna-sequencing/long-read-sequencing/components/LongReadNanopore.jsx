@@ -32,18 +32,12 @@ const LongReadNanopore = () => {
             </div>
 
             <div className="px-6 lg:px-9 py-6 lg:py-0 order-1 lg:order-2">
-              <p className="mb-3 text-gray-600 leading-relaxed">
-                Long-read Sequencing using Oxford Nanopore Technologies (ONT) delivers longer, continuous, and unambiguously assembled sequences, resulting in fewer contigs and enhancing overlap for accurate genome assembly.
-              </p>
-              <p className="mb-3 text-gray-600 leading-relaxed">
-                Helps in sequencing long stretches of DNA for complete genome assemblies of microbial, human, animal and plant species.
-              </p>
-              <p className="mb-3 text-gray-600 leading-relaxed">
-                Enables direct, real-time analysis of long DNA or RNA fragments by measuring changes in electric current as they pass through a nanopore embedded in a flow cell.
-              </p>
-              <p className="text-gray-600 leading-relaxed">
-                Nanopore sequencing offers advantages across multiple research areas, including genome assembly, full-length transcript detection, base modification detection, and specialized applications like rapid clinical diagnoses and outbreak surveillance.
-              </p>
+              <ul className="list-disc list-inside space-y-3 text-gray-600 leading-relaxed">
+                <li>Long-read Sequencing using Oxford Nanopore Technologies (ONT) delivers longer, continuous, and unambiguously assembled sequences, resulting in fewer contigs and enhancing overlap for accurate genome assembly.</li>
+                <li>Helps in sequencing long stretches of DNA for complete genome assemblies of microbial, human, animal and plant species.</li>
+                <li>Enables direct, real-time analysis of long DNA or RNA fragments by measuring changes in electric current as they pass through a nanopore embedded in a flow cell.</li>
+                <li>Nanopore sequencing offers advantages across multiple research areas, including genome assembly, full-length transcript detection, base modification detection, and specialized applications like rapid clinical diagnoses and outbreak surveillance.</li>
+              </ul>
             </div>
           </div>
         </div>
@@ -56,18 +50,12 @@ const LongReadNanopore = () => {
           
           <div className="grid grid-cols-1 lg:grid-cols-[1.14fr_1fr] min-h-[140px] lg:min-h-[280px]">
             <div className="px-6 lg:px-9 py-6 lg:py-0">
-              <p className="mb-3 text-gray-600 leading-relaxed">
-                PCR-free SMRT technology producing Hi-Fi reads via circular consensus sequencing (CCS) mode, yielding long reads up to 25 kb with 99.9% base level accuracy.
-              </p>
-              <p className="mb-3 text-gray-600 leading-relaxed">
-                Enables rapid and cost-effective generation of contiguous, complete, and accurate de novo genome assemblies, even for complex genomes.
-              </p>
-              <p className="mb-3 text-gray-600 leading-relaxed">
-                Allows the haplotype resolution of complex polyploids, particularly in plants.
-              </p>
-              <p className="text-gray-600 leading-relaxed">
-                The technology can be utilized to provide a comprehensive view of the epigenome and transcriptome, as well as uncover different variants such as SNPs, homopolymer repeats, translocations, structural variants, and copy number variants.
-              </p>
+              <ul className="list-disc list-inside space-y-3 text-gray-600 leading-relaxed">
+                <li>PCR-free SMRT technology producing Hi-Fi reads via circular consensus sequencing (CCS) mode, yielding long reads up to 25 kb with 99.9% base level accuracy.</li>
+                <li>Enables rapid and cost-effective generation of contiguous, complete, and accurate de novo genome assemblies, even for complex genomes.</li>
+                <li>Allows the haplotype resolution of complex polyploids, particularly in plants.</li>
+                <li>The technology can be utilized to provide a comprehensive view of the epigenome and transcriptome, as well as uncover different variants such as SNPs, homopolymer repeats, translocations, structural variants, and copy number variants.</li>
+              </ul>
             </div>
 
             <div

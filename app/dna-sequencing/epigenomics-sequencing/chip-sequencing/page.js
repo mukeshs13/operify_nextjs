@@ -19,7 +19,8 @@ export default function ChIPSequencingPage() {
     <>
       <Header />
       <TitleBar
-        title="ChIP (Chromatin immunoprecipitation) Sequencing - Dissecting Gene Regulation with ChIP-Seq"
+        title="ChIP (Chromatin immunoprecipitation) Sequencing"
+        desc="Dissecting Gene Regulation with ChIP-Seq"
         breadcrumbs={breadcrumbs}
       />
       

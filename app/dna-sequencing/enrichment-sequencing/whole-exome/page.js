@@ -20,7 +20,8 @@ export default function WholeExomeSequencingPage() {
       <Header />
       <div className="page-wrapper">
         <TitleBar 
-          title="Whole Exome Sequencing - Focused Insights, Comprehensive Impact"
+          title="Whole Exome Sequencing"
+          desc="Focused Insights, Comprehensive Impact"
           breadcrumbs={breadcrumbs}
           backgroundImage="/images/bredcrumb.jpg"
         />

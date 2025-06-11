@@ -19,7 +19,8 @@ export default function SNPGenotypingPage() {
       <Header />
       <div className="page-wrapper">
         <TitleBar 
-          title="SNP-based Genotyping - From Genomes to Traits: Precision through SNPs"
+          title="SNP-based Genotyping"
+          desc="From Genomes to Traits: Precision through SNPs"
           breadcrumbs={breadcrumbs}
           backgroundImage="/images/bredcrumb.jpg"
         />

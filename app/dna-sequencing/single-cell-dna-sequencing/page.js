@@ -39,7 +39,8 @@ export default function SingleCellDNASequencingPage() {
 
       {/* Title Bar */}
       <TitleBar 
-        title="Single Cell DNA Sequencing - Mapping Genetic Diversity Cell by Cell"
+        title="Single Cell DNA Sequencing"
+        desc="Mapping Genetic Diversity Cell by Cell"
         breadcrumbs={breadcrumbs}
         backgroundImage="/images/bredcrumb.jpg"
       />

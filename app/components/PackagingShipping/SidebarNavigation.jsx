@@ -6,7 +6,7 @@ const SidebarNavigation = ({ activeSection, onSectionChange }) => {
     { id: 'packaging-content', label: '2. Packaging Guideline' },
     { id: 'dna-content', label: '3. Shipping of DNA Samples' },
     { id: 'rna-content', label: '4. Shipping of RNA Samples' },
-    { id: 'temperature-content', label: '5. Shipping Temperature and Condition' },
+    { id: 'temperature-content', label: '5. Shipping Condition' },
     { id: 'schedule-content', label: '6. Shipping Schedule and Address' }
   ];
 

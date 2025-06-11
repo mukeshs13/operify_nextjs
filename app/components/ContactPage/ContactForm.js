@@ -193,7 +193,7 @@ const ContactForm = () => {
             />
           </div>
 
-          <div className="pt-4">
+          <div className="pt-4 flex justify-end">
             <button
               type="submit"
               disabled={isSubmitting}

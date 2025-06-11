@@ -2,10 +2,10 @@
 import React from 'react';
 import Link from 'next/link';
 
-const TitleBar = ({ title, breadcrumbs, backgroundImage = "/images/bredcrumb.jpg" }) => {
+const TitleBar = ({ title, desc, breadcrumbs, backgroundImage = "/images/bredcrumb.jpg" }) => {
   return (
     <section 
-      className="relative bg-cover bg-center py-4 sm:py-6 h-auto sm:h-32 md:h-40 lg:h-24 min-h-[120px] sm:min-h-[140px]" 
+      className="relative bg-cover bg-center py-4 sm:py-6 h-auto sm:h-32 md:h-40 lg:h-[12rem] min-h-[120px] sm:min-h-[140px]" 
       style={{ backgroundImage: `url('${backgroundImage}')` }}
     >
       {/* Breadcrumb */}
@@ -44,6 +44,9 @@ const TitleBar = ({ title, breadcrumbs, backgroundImage = "/images/bredcrumb.jpg
         <h1 className="text-base sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-bold text-white mb-2 px-4 leading-tight">
           {title}
         </h1>
+        <h3 className="text-base sm:text-xl md:text-2xl lg:text-3xl xl:text-2xl font-bold text-white mb-2 px-4 leading-tight">
+          {desc}
+        </h3>
         <div className="w-12 sm:w-14 md:w-16 lg:w-16 h-1 bg-yellow-400 mx-auto"></div>
       </div>
     </section>

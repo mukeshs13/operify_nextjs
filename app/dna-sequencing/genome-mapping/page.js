@@ -38,7 +38,8 @@ export default function GenomeMappingPage() {
 
       {/* Title Bar */}
       <TitleBar 
-        title="Genome Mapping - Unlocking Genomic Secrets, One Map at a Time"
+        title="Genome Mapping"
+        desc="Unlocking Genomic Secrets, One Map at a Time"
         breadcrumbs={breadcrumbs}
         backgroundImage="/images/bredcrumb.jpg"
       />

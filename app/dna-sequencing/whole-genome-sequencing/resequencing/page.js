@@ -18,7 +18,8 @@ export default function WholeGenomeResequencingPage() {
     <>
       <Header />
       <TitleBar
-        title="Whole Genome ReSequencing - Unraveling Genomic Complexity with Re-Sequencing"
+        title="Whole Genome ReSequencing"
+        desc="Unraveling Genomic Complexity with Re-Sequencing"
         breadcrumbs={breadcrumbs}
       />
       

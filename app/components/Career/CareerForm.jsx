@@ -17,7 +17,7 @@ const ExperienceSelect = ({ value, onChange, required }) => {
       <button
         type="button"
         onClick={() => setIsOpen(!isOpen)}
-        className="w-full px-5 py-5 bg-white border border-teal-400 rounded-full text-left focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent appearance-none text-gray-600 flex items-center justify-between"
+        className="w-full h-[52px] px-5 bg-white border border-teal-400 rounded-full text-left focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent appearance-none flex items-center justify-between"
         required={required}
       >
         <span className={value ? 'text-gray-800' : 'text-gray-500'}>
@@ -75,13 +75,13 @@ const FileUpload = ({ onFileChange, currentFile, required }) => {
         className="absolute inset-0 w-full h-full opacity-0 cursor-pointer"
         id="resume-upload"
       />
-      <div className="w-full px-5 py-4 bg-white border border-teal-400 rounded-full focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent cursor-pointer flex items-center justify-between">
+      <div className="w-full h-[52px] px-5 bg-white border border-teal-400 rounded-full focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent cursor-pointer flex items-center justify-between">
         <span className={currentFile ? 'text-gray-800' : 'text-gray-500'}>
           {currentFile ? currentFile.name : 'Upload Resume'}
         </span>
         <button 
           type="button"
-          className="bg-gray-100 text-gray-700 px-4 py-2 rounded-full text-sm hover:bg-gray-200 transition-colors"
+          className="bg-gray-100 text-gray-700 px-4 py-2 rounded-full text-sm hover:bg-gray-200 transition-colors flex-shrink-0"
         >
           Choose File
         </button>
@@ -263,7 +263,7 @@ const CareerForm = () => {
             />
           </div>
 
-          <div className="pt-2">
+          <div className="pt-2 flex justify-end">
             <button
               type="submit"
               disabled={isSubmitting}

@@ -39,7 +39,8 @@ export default function MetagenomicsSequencingPage() {
 
       {/* Title Bar */}
       <TitleBar 
-        title="Metagenomics Sequencing - Exploring Earth's Microbial Frontiers from Soil to Ocean"
+        title="Metagenomics Sequencing"
+        desc="Exploring Earth's Microbial Frontiers from Soil to Ocean"
         breadcrumbs={breadcrumbs}
         backgroundImage="/images/bredcrumb.jpg"
       />

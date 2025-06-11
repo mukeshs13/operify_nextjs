@@ -20,7 +20,8 @@ export default function LongReadSequencingPage() {
     <>
       <Header />
       <TitleBar
-        title="Whole Genome Long Read Sequencing - Sequencing the Complete Genome, Long and Clear"
+        title="Whole Genome Long Read Sequencing"
+        desc="Sequencing the Complete Genome, Long and Clear"
         breadcrumbs={breadcrumbs}
       />
 

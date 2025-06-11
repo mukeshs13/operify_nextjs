@@ -19,7 +19,8 @@ export default function WGBSPage() {
     <>
       <Header />
       <TitleBar
-        title="Whole Genome Bisulphite Sequencing (WGBS) - Comprehensive DNA Methylation Profiling"
+        title="Whole Genome Bisulphite Sequencing (WGBS)"
+        desc="Comprehensive DNA Methylation Profiling"
         breadcrumbs={breadcrumbs}
       />
       

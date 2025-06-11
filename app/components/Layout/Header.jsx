@@ -52,7 +52,7 @@ const Header = () => {
               <li className="relative group">
                 <Link
                   href="/dna-sequencing"
-                  className="font-medium text-lg py-2 hover:text-teal-700 transition-colors"
+                  className="font-semibold text-lg py-2 hover:text-teal-700 transition-colors"
                   style={{ color: '#2a6564' }}
                 >
                   Research
@@ -373,7 +373,7 @@ const Header = () => {
               <li>
                 <Link
                   href="/health"
-                  className="font-medium text-lg py-2 hover:text-teal-700 transition-colors"
+                  className="font-semibold text-lg py-2 hover:text-teal-700 transition-colors"
                   style={{ color: '#2a6564' }}
                 >
                   Health
@@ -382,7 +382,7 @@ const Header = () => {
               <li className="relative group">
                 <Link
                   href="/sample-submission-guideline"
-                  className="font-medium text-lg py-2 hover:text-teal-700 transition-colors"
+                  className="font-semibold text-lg py-2 hover:text-teal-700 transition-colors"
                   style={{ color: '#2a6564' }}
                 >
                   Knowledge Hub
@@ -417,7 +417,7 @@ const Header = () => {
               <li className="relative group">
                 <Link
                   href="/company"
-                  className="font-medium text-lg py-2 hover:text-teal-700 transition-colors"
+                  className="font-semibold text-lg py-2 hover:text-teal-700 transition-colors"
                   style={{ color: '#2a6564' }}
                 >
                   About Us

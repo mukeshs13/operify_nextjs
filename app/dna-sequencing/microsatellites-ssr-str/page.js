@@ -39,7 +39,8 @@ export default function MicrosatellitesSSRSTRPage() {
 
       {/* Title Bar */}
       <TitleBar 
-        title="Microsatellites (SSR/STR) - Empowering Research with Microsatellite Markers"
+        title="Microsatellites (SSR/STR)"
+        desc="Empowering Research with Microsatellite Markers"
         breadcrumbs={breadcrumbs}
         backgroundImage="/images/bredcrumb.jpg"
       />

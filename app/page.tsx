@@ -25,7 +25,7 @@ export default function Home() {
     <main>
       <HeroSection />
       <NGSSection />
-      <AdvantagesSection />
+      {/* <AdvantagesSection /> */}
       <ResearchSection />
       <CertificationsSection />
       <CTASection />

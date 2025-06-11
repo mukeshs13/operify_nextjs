@@ -18,7 +18,8 @@ export default function TargetedSequencingPage() {
     <>
       <Header />
       <TitleBar
-        title="Targeted DNA Sequencing - Pinpoint Precision for Your Genetic Insights"
+        title="Targeted DNA Sequencing"
+        desc="Pinpoint Precision for Your Genetic Insights"
         breadcrumbs={breadcrumbs}
       />
       

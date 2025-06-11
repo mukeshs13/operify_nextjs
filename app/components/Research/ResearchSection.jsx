@@ -54,7 +54,7 @@ const ResearchSection = () => {
     <section id="research" className="py-6 sm:py-8 bg-white">
       <div className="container mx-auto max-w-none px-6">
         <div className="mb-8">
-          <h2 className="text-4xl font-bold text-teal-700 mb-4">Research</h2>
+          <h2 className="text-4xl font-bold text-teal-700 mb-4">Research Area</h2>
         </div>
         
         {/* Grid layout - 1 column on mobile, 2 columns on desktop */}

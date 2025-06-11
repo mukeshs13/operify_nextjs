@@ -27,7 +27,7 @@ const ShippingSchedule = () => {
           will be applicable) or you can ship/drop samples at the mentioned address:
         </p>
         
-        <div className="p-6">
+        <div >
           <div className="leading-relaxed" style={{ color: '#555555' }}>
             <div className="font-semibold text-lg text-teal-700 mb-3">
               Operify Tech Pvt.Ltd.
@@ -37,7 +37,7 @@ const ShippingSchedule = () => {
               <div>Kirti Nagar Industrial Area,</div>
               <div>New Delhi- 110015</div>
             </div>
-            <div className="mt-4 space-y-2">
+            <div className="mt-2">
               <div className="flex items-center gap-2">
                 <span className="font-medium">Phone:</span>
                 <a href="tel:9319171176" className="text-teal-600 hover:text-teal-800">

@@ -44,7 +44,8 @@ export default function HiCMappingPage() {
 
       {/* Title Bar */}
       <TitleBar 
-        title="High-throughput Chromosome Conformation Capture (Hi-C) Mapping - Unravel the 3D Genome"
+        title="High-throughput Chromosome Conformation Capture (Hi-C) Mapping"
+        desc="Unravel the 3D Genome"
         breadcrumbs={breadcrumbs}
         backgroundImage="/images/bredcrumb.jpg"
       />

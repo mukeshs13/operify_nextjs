@@ -18,7 +18,8 @@ export default function AmpliconSequencingPage() {
     <>
       <Header />
       <TitleBar
-        title="Amplicon Sequencing (16S/18S/ITS) - Explore Genetic Diversity at the Molecular Level"
+        title="Amplicon Sequencing (16S/18S/ITS)"
+        desc="Explore Genetic Diversity at the Molecular Level"
         breadcrumbs={breadcrumbs}
       />
       

@@ -44,7 +44,8 @@ export default function OpticalMappingPage() {
 
       {/* Title Bar */}
       <TitleBar 
-        title="Optical Mapping - Dissecting Gene Regulation with Advanced Optical Mapping"
+        title="Optical Mapping"
+        desc="Dissecting Gene Regulation with Advanced Optical Mapping"
         breadcrumbs={breadcrumbs}
         backgroundImage="/images/bredcrumb.jpg"
       />

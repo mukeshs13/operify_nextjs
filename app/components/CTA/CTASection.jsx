@@ -14,8 +14,8 @@ const CTASection = () => {
             <Image 
               src="/images/homepage-2/Scientist.png" 
               alt="Scientist" 
-              width={600} 
-              height={400}
+              width={1000} 
+              height={800}
               className="rounded-2xl mx-auto max-w-full h-auto"
             />
           </div>
@@ -31,7 +31,7 @@ const CTASection = () => {
             your samples, and generate your first NGS dataset.
           </p>
           
-          <button className="bg-yellow-400 text-gray-900 px-8 py-4 rounded-full text-lg font-semibold hover:bg-yellow-300 transition-colors">
+          <button className="bg-yellow-400 text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-yellow-300 transition-colors">
             Enquire Now
           </button>
         </div>

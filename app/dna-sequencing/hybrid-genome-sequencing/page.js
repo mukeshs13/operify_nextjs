@@ -40,7 +40,8 @@ export default function HybridGenomeSequencingPage() {
 
       {/* Title Bar */}
       <TitleBar 
-        title="Hybrid Genome Sequencing - Unifying Technologies for Deeper Genomic Clarity"
+        title="Hybrid Genome Sequencing"
+        desc="Unifying Technologies for Deeper Genomic Clarity"
         breadcrumbs={breadcrumbs}
         backgroundImage="/images/bredcrumb.jpg"
       />

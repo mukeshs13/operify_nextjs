@@ -7,9 +7,9 @@ const TooltipIcon = ({ text, rowIndex, totalRows }) => {
   if (!text) return null;
 
   return (
-    <div className="relative inline-block ml-2">
+    <div className="relative inline-block ml-1">
       <span
-        className="inline-flex items-center justify-center w-4 h-4 text-xs font-bold text-teal-600 border-2 border-teal-600 rounded-full cursor-pointer hover:bg-teal-600 hover:text-white transition-all duration-200"
+        className="inline-flex items-center justify-center w-3 h-3 text-xs font-bold text-teal-600 border border-teal-600 rounded-full cursor-pointer hover:bg-teal-600 hover:text-white transition-all duration-200"
         onMouseEnter={() => setShowTooltip(true)}
         onMouseLeave={() => setShowTooltip(false)}
       >
@@ -140,6 +140,11 @@ const ShippingTemperatureTable = () => {
         
         <div className="overflow-x-auto">
           <table className="w-full border-collapse border border-gray-300 text-sm">
+            <colgroup>
+              <col style={{width: '25%'}} />
+              <col style={{width: '25%'}} />
+              <col style={{width: '50%'}} />
+            </colgroup>
             <thead>
               <tr className="bg-teal-50">
                 <th className="border border-gray-300 px-3 py-2 text-left font-semibold text-teal-700">

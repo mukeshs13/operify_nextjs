@@ -18,7 +18,8 @@ export default function WholeGenomeDenovoPage() {
     <>
       <Header />
       <TitleBar
-        title="Whole Genome Denovo Sequencing - Unlocking Genomes, Discovering Diversity"
+        title="Whole Genome Denovo Sequencing"
+        desc="Unlocking Genomes, Discovering Diversity"
         breadcrumbs={breadcrumbs}
       />
       

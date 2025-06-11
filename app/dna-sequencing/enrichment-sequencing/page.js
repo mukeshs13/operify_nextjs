@@ -16,7 +16,8 @@ export default function EnrichmentSequencingPage() {
     <>
       <Header />
       <TitleBar
-        title="Enrichment Sequencing - Enriched Genome, Enriched Insights"
+        title="Enrichment Sequencing"
+        desc="Enriched Genome, Enriched Insights"
         breadcrumbs={breadcrumbs}
       />
       

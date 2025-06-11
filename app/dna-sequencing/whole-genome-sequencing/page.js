@@ -17,7 +17,8 @@ export default function WholeGenomeSequencingPage() {
     <>
       <Header />
       <TitleBar
-        title="Whole Genome Sequencing - Whole Genome, Whole Insights"
+        title="Whole Genome Sequencing"
+        desc="Whole Genome, Whole Insights"
         breadcrumbs={breadcrumbs}
       />
       

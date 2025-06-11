@@ -16,7 +16,8 @@ export default function EpigenomicsSequencingPage() {
     <>
       <Header />
       <TitleBar
-        title="Epigenomics Sequencing - Explore Cellular Memory"
+        title="Epigenomics Sequencing"
+        desc="Explore Cellular Memory"
         breadcrumbs={breadcrumbs}
       />
       
