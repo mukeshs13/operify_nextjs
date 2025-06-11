@@ -31,7 +31,7 @@ const Header = () => {
 
   return (
     <header className="bg-white shadow-sm border-b border-gray-100">
-      <div className="container mx-auto">
+      <div className="container max-w-none mx-auto">
         <div className="flex justify-between items-center px-4 sm:px-6 py-3 sm:py-4">
           {/* Logo */}
           <div className="flex-shrink-0">
@@ -51,7 +51,7 @@ const Header = () => {
             <ul className="flex space-x-8 xl:space-x-12">
               <li className="relative group">
                 <Link
-                  href="/dna-sequencing"
+                  href="#"
                   className="font-semibold text-lg py-2 hover:text-teal-700 transition-colors"
                   style={{ color: '#2a6564' }}
                 >

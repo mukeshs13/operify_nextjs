@@ -13,7 +13,7 @@ const ContactInfo = () => {
             We&apos;re here here to help with your research and innovation needs.
           </p>
           <div className="flex justify-center lg:justify-start">
-            <div className="relative w-full max-w-md h-64 md:h-80 lg:h-96">
+            <div className="relative w-full max-w-lg h-80 md:h-96 lg:h-[28rem]">
               <Image
                 src="/images/Contact_us.png"
                 alt="Contact Us"

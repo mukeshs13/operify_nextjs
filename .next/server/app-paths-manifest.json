@@ -1,8 +1,7 @@
 {
-  "/rna-sequencing/degradome-sequencing/page": "app/rna-sequencing/degradome-sequencing/page.js",
+  "/dna-sequencing/long-read-sequencing/page": "app/dna-sequencing/long-read-sequencing/page.js",
+  "/contact-us/page": "app/contact-us/page.js",
+  "/careers/page": "app/careers/page.js",
   "/sample-initiation-form/page": "app/sample-initiation-form/page.js",
-  "/dna-sequencing/whole-genome-sequencing/page": "app/dna-sequencing/whole-genome-sequencing/page.js",
-  "/dna-sequencing/whole-genome-sequencing/resequencing/page": "app/dna-sequencing/whole-genome-sequencing/resequencing/page.js",
-  "/dna-sequencing/whole-genome-sequencing/denovo/page": "app/dna-sequencing/whole-genome-sequencing/denovo/page.js",
-  "/rna-sequencing/whole-transcriptome-sequencing/page": "app/rna-sequencing/whole-transcriptome-sequencing/page.js"
+  "/page": "app/page.js"
 }
