@@ -1,11 +1,10 @@
 // app/rna-sequencing/whole-transcriptome-sequencing/page.js
-import Header from '../../components/Layout/Header';
-import Footer from '../../components/Layout/Footer';
 import TitleBar from '../../components/shared/TitleBar';
 import WTSIntroduction from './components/WTSIntroduction';
 import WTSAdvantages from './components/WTSAdvantages';
 import WTSApplications from './components/WTSApplications';
 import WTSSpecifications from './components/WTSSpecifications';
+import PageLayout from '../../components/Layout/PageLayout';
 
 export default function WholeTranscriptomeSequencingPage() {
   const breadcrumbs = [
@@ -15,8 +14,7 @@ export default function WholeTranscriptomeSequencingPage() {
   ];
 
   return (
-    <div>
-      <Header />
+    <PageLayout fixedHeader={true}>
       <TitleBar 
         title="Whole Transcriptome (Total RNA) Sequencing"
         breadcrumbs={breadcrumbs}
@@ -25,7 +23,6 @@ export default function WholeTranscriptomeSequencingPage() {
       <WTSAdvantages />
       <WTSApplications />
       <WTSSpecifications />
-      <Footer />
-    </div>
+    </PageLayout>
   );
 }

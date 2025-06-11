@@ -1,11 +1,10 @@
 // app/dna-sequencing/snp-genotyping/page.js
-import Header from '../../components/Layout/Header';
-import Footer from '../../components/Layout/Footer';
 import TitleBar from '../../components/shared/TitleBar';
 import SNPIntroduction from './components/SNPIntroduction';
 import SNPAdvantages from './components/SNPAdvantages';
 import SNPApplications from './components/SNPApplications';
 import SNPSpecifications from './components/SNPSpecifications';
+import PageLayout from '../../components/Layout/PageLayout';
 
 export default function SNPGenotypingPage() {
   const breadcrumbs = [
@@ -15,8 +14,7 @@ export default function SNPGenotypingPage() {
   ];
 
   return (
-    <>
-      <Header />
+    <PageLayout fixedHeader={true}>
       <div className="page-wrapper">
         <TitleBar 
           title="SNP-based Genotyping"
@@ -32,7 +30,6 @@ export default function SNPGenotypingPage() {
           <SNPSpecifications />
         </div>
       </div>
-      <Footer />
-    </>
+    </PageLayout>
   );
 }

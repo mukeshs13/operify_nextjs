@@ -1,5 +1,4 @@
-import Header from '../../components/Layout/Header';
-import Footer from '../../components/Layout/Footer';
+import PageLayout from '../../components/Layout/PageLayout';
 import TitleBar from '../../components/shared/TitleBar';
 import EnrichmentIntroduction from './components/EnrichmentIntroduction';
 import EnrichmentAdvantages from './components/EnrichmentAdvantages';
@@ -13,8 +12,7 @@ export default function EnrichmentSequencingPage() {
   ];
 
   return (
-    <>
-      <Header />
+    <PageLayout fixedHeader={true}>
       <TitleBar
         title="Enrichment Sequencing"
         desc="Enriched Genome, Enriched Insights"
@@ -26,7 +24,6 @@ export default function EnrichmentSequencingPage() {
         <EnrichmentAdvantages />
         <EnrichmentSpecifications />
       </div>
-      <Footer />
-    </>
+    </PageLayout>
   );
 }

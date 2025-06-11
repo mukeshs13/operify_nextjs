@@ -1,10 +1,9 @@
-import Header from '../../../components/Layout/Header';
-import Footer from '../../../components/Layout/Footer';
 import TitleBar from '../../../components/shared/TitleBar';
 import DenovoIntroduction from './components/DenovoIntroduction';
 import DenovoAdvantages from './components/DenovoAdvantages';
 import DenovoApplications from './components/DenovoApplications';
 import DenovoSpecifications from './components/DenovoSpecifications';
+import PageLayout from '../../../components/Layout/PageLayout';
 
 export default function WholeGenomeDenovoPage() {
   const breadcrumbs = [
@@ -15,8 +14,7 @@ export default function WholeGenomeDenovoPage() {
   ];
 
   return (
-    <>
-      <Header />
+    <PageLayout fixedHeader={true}>
       <TitleBar
         title="Whole Genome Denovo Sequencing"
         desc="Unlocking Genomes, Discovering Diversity"
@@ -29,7 +27,6 @@ export default function WholeGenomeDenovoPage() {
         <DenovoApplications />
         <DenovoSpecifications />
       </div>
-      <Footer />
-    </>
+    </PageLayout>
   );
 }

@@ -1,5 +1,3 @@
-import Header from '../../components/Layout/Header';
-import Footer from '../../components/Layout/Footer';
 import TitleBar from '../../components/shared/TitleBar';
 import LongReadIntroduction from './components/LongReadIntroduction';
 import LongReadComparison from './components/LongReadComparison';
@@ -7,6 +5,7 @@ import LongReadNanopore from './components/LongReadNanopore';
 import LongReadAdvantages from './components/LongReadAdvantages';
 import LongReadApplications from './components/LongReadApplications';
 import LongReadSpecifications from './components/LongReadSpecifications';
+import PageLayout from '../../components/Layout/PageLayout';
 
 export default function LongReadSequencingPage() {
   const breadcrumbs = [
@@ -17,8 +16,7 @@ export default function LongReadSequencingPage() {
   ];
 
   return (
-    <>
-      <Header />
+    <PageLayout fixedHeader={true}>
       <TitleBar
         title="Whole Genome Long Read Sequencing"
         desc="Sequencing the Complete Genome, Long and Clear"
@@ -33,8 +31,6 @@ export default function LongReadSequencingPage() {
         <LongReadApplications /> 
         <LongReadSpecifications /> 
       </div>
-
-      <Footer />
-    </>
+    </PageLayout>
   );
 }

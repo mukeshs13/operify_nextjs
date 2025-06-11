@@ -1,11 +1,10 @@
 // app/rna-sequencing/mrna-sequencing/page.js
-import Footer from '../../components/Layout/Footer';
-import Header from '../../components/Layout/Header';
 import TitleBar from '../../components/shared/TitleBar';
 import MRNAIntroduction from './components/MRNAIntroduction';
 import MRNAAdvantages from './components/MRNAAdvantages';
 import MRNAApplications from './components/MRNAApplications';
 import MRNASpecifications from './components/MRNASpecifications';
+import PageLayout from '../../components/Layout/PageLayout';
 
 export default function MRNASequencingPage() {
   const breadcrumbs = [
@@ -15,8 +14,7 @@ export default function MRNASequencingPage() {
   ];
 
   return (
-    <div>
-      <Header />
+    <PageLayout fixedHeader={true}>
       <TitleBar 
         title="mRNA Sequencing"
         breadcrumbs={breadcrumbs}
@@ -25,7 +23,6 @@ export default function MRNASequencingPage() {
       <MRNAAdvantages />
       <MRNAApplications />
       <MRNASpecifications />
-      <Footer />
-    </div>
+    </PageLayout>
   );
 }

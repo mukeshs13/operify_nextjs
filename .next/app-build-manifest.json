@@ -6,130 +6,120 @@
       "static/css/app/layout.css",
       "static/chunks/app/layout.js"
     ],
-    "/page": [
+    "/contact-us/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/page.js"
-    ],
-    "/dna-sequencing/whole-genome-sequencing/denovo/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/dna-sequencing/whole-genome-sequencing/denovo/page.js"
-    ],
-    "/dna-sequencing/whole-genome-sequencing/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/dna-sequencing/whole-genome-sequencing/page.js"
-    ],
-    "/dna-sequencing/whole-genome-sequencing/resequencing/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/dna-sequencing/whole-genome-sequencing/resequencing/page.js"
-    ],
-    "/dna-sequencing/enrichment-sequencing/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/dna-sequencing/enrichment-sequencing/page.js"
-    ],
-    "/dna-sequencing/genome-mapping/hi-c-mapping/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/dna-sequencing/genome-mapping/hi-c-mapping/page.js"
-    ],
-    "/dna-sequencing/enrichment-sequencing/targeted-sequencing/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/dna-sequencing/enrichment-sequencing/targeted-sequencing/page.js"
-    ],
-    "/dna-sequencing/snp-genotyping/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/dna-sequencing/snp-genotyping/page.js"
-    ],
-    "/rna-sequencing/circular-rna-sequencing/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/rna-sequencing/circular-rna-sequencing/page.js"
-    ],
-    "/rna-sequencing/mrna-sequencing/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/rna-sequencing/mrna-sequencing/page.js"
-    ],
-    "/dna-sequencing/enrichment-sequencing/whole-exome/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/dna-sequencing/enrichment-sequencing/whole-exome/page.js"
-    ],
-    "/rna-sequencing/whole-transcriptome-sequencing/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/rna-sequencing/whole-transcriptome-sequencing/page.js"
-    ],
-    "/rna-sequencing/metatranscriptomics-sequencing/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/rna-sequencing/metatranscriptomics-sequencing/page.js"
-    ],
-    "/dna-sequencing/enrichment-sequencing/amplicon-sequencing/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/dna-sequencing/enrichment-sequencing/amplicon-sequencing/page.js"
-    ],
-    "/dna-sequencing/microsatellites-ssr-str/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/dna-sequencing/microsatellites-ssr-str/page.js"
-    ],
-    "/dna-sequencing/single-cell-dna-sequencing/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/dna-sequencing/single-cell-dna-sequencing/page.js"
-    ],
-    "/dna-sequencing/long-read-sequencing/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/dna-sequencing/long-read-sequencing/page.js"
-    ],
-    "/dna-sequencing/epigenomics-sequencing/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/dna-sequencing/epigenomics-sequencing/page.js"
-    ],
-    "/rna-sequencing/degradome-sequencing/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/rna-sequencing/degradome-sequencing/page.js"
-    ],
-    "/sample-initiation-form/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/sample-initiation-form/page.js"
+      "static/chunks/app/contact-us/page.js"
     ],
     "/careers/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/careers/page.js"
     ],
-    "/contact-us/page": [
+    "/sample-submission-guideline/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/contact-us/page.js"
+      "static/chunks/app/sample-submission-guideline/page.js"
     ],
     "/our-team/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/our-team/page.js"
     ],
-    "/sample-submission-guideline/page": [
+    "/team-member-detail1/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/sample-submission-guideline/page.js"
+      "static/chunks/app/team-member-detail1/page.js"
     ],
-    "/company/page": [
+    "/packaging-shipping-guideline/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/company/page.js"
+      "static/chunks/app/packaging-shipping-guideline/page.js"
+    ],
+    "/sample-initiation-form/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/sample-initiation-form/page.js"
+    ],
+    "/samples-form/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/samples-form/page.js"
+    ],
+    "/dna-sequencing/whole-genome-sequencing/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/dna-sequencing/whole-genome-sequencing/page.js"
+    ],
+    "/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/page.js"
+    ],
+    "/dna-sequencing/enrichment-sequencing/amplicon-sequencing/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/dna-sequencing/enrichment-sequencing/amplicon-sequencing/page.js"
+    ],
+    "/dna-sequencing/genome-mapping/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/dna-sequencing/genome-mapping/page.js"
+    ],
+    "/rna-sequencing/lncrna-sequencing/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/rna-sequencing/lncrna-sequencing/page.js"
+    ],
+    "/dna-sequencing/whole-genome-sequencing/denovo/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/dna-sequencing/whole-genome-sequencing/denovo/page.js"
+    ],
+    "/dna-sequencing/enrichment-sequencing/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/dna-sequencing/enrichment-sequencing/page.js"
+    ],
+    "/dna-sequencing/whole-genome-sequencing/resequencing/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/dna-sequencing/whole-genome-sequencing/resequencing/page.js"
+    ],
+    "/dna-sequencing/enrichment-sequencing/whole-exome/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/dna-sequencing/enrichment-sequencing/whole-exome/page.js"
+    ],
+    "/dna-sequencing/enrichment-sequencing/targeted-sequencing/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/dna-sequencing/enrichment-sequencing/targeted-sequencing/page.js"
+    ],
+    "/dna-sequencing/single-cell-dna-sequencing/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/dna-sequencing/single-cell-dna-sequencing/page.js"
+    ],
+    "/dna-sequencing/metagenomics-sequencing/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/dna-sequencing/metagenomics-sequencing/page.js"
+    ],
+    "/dna-sequencing/epigenomics-sequencing/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/dna-sequencing/epigenomics-sequencing/page.js"
+    ],
+    "/dna-sequencing/epigenomics-sequencing/wgbs/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/dna-sequencing/epigenomics-sequencing/wgbs/page.js"
+    ],
+    "/_not-found/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/_not-found/page.js"
     ]
   }
 }

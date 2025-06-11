@@ -1,11 +1,10 @@
-import Header from '../../../components/Layout/Header';
-import Footer from '../../../components/Layout/Footer';
 import TitleBar from '../../../components/shared/TitleBar';
 import ATACIntroduction from './components/ATACIntroduction';
 import ATACAdvantages from './components/ATACAdvantages';
 import ATACBioinformatics from './components/ATACBioinformatics';
 import ATACApplications from './components/ATACApplications';
 import ATACSpecifications from './components/ATACSpecifications';
+import PageLayout from '../../../components/Layout/PageLayout';
 
 export default function ATACSequencingPage() {
   const breadcrumbs = [
@@ -16,8 +15,7 @@ export default function ATACSequencingPage() {
   ];
 
   return (
-    <>
-      <Header />
+    <PageLayout fixedHeader={true}>
       <TitleBar
         title="ATAC (Assay for Transposase-Accessible Chromatin) Sequencing"
         desc="Chromatin for Gene Regulation Insights"
@@ -31,7 +29,6 @@ export default function ATACSequencingPage() {
         <ATACApplications />
         <ATACSpecifications />
       </div>
-      <Footer />
-    </>
+    </PageLayout>
   );
 }

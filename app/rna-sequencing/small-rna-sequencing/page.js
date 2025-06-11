@@ -1,13 +1,11 @@
 // app/rna-sequencing/small-rna-sequencing/page.js
-
-import Header from '../../components/Layout/Header';
-import Footer from '../../components/Layout/Footer';
 import TitleBar from '../../components/shared/TitleBar';
 import SRNAIntroduction from './components/SRNAIntroduction';
 import SRNAAdvantages from './components/SRNAAdvantages';
 import SRNABioinformatics from './components/SRNABioinformatics';
 import SRNAApplications from './components/SRNAApplications';
 import SRNASpecifications from './components/SRNASpecifications';
+import PageLayout from '../../components/Layout/PageLayout';
 
 export default function SmallRNASequencingPage() {
   const breadcrumbs = [
@@ -17,8 +15,7 @@ export default function SmallRNASequencingPage() {
   ];
 
   return (
-    <div>
-      <Header />
+    <PageLayout fixedHeader={true}>
       <TitleBar 
         title="Small RNA (sRNA) sequencing"
         breadcrumbs={breadcrumbs}
@@ -28,7 +25,6 @@ export default function SmallRNASequencingPage() {
       <SRNABioinformatics />
       <SRNAApplications />
       <SRNASpecifications />
-      <Footer />
-    </div>
+    </PageLayout>
   );
 }

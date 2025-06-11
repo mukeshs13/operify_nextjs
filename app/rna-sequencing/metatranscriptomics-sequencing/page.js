@@ -1,10 +1,9 @@
-import Header from '../../components/Layout/Header';
-import Footer from '../../components/Layout/Footer';
 import TitleBar from '../../components/shared/TitleBar';
 import MetatranscriptomicsIntroduction from './components/MetatranscriptomicsIntroduction';
 import MetatranscriptomicsAdvantages from './components/MetatranscriptomicsAdvantages';
 import MetatranscriptomicsApplications from './components/MetatranscriptomicsApplications';
 import MetatranscriptomicsSpecifications from './components/MetatranscriptomicsSpecifications';
+import PageLayout from '../../components/Layout/PageLayout';
 
 export default function MetatranscriptomicsSequencingPage() {
   const breadcrumbs = [
@@ -14,8 +13,7 @@ export default function MetatranscriptomicsSequencingPage() {
   ];
 
   return (
-    <div>
-      <Header />
+    <PageLayout fixedHeader={true}>
       <TitleBar 
         title="Metatranscriptomics Sequencing"
         breadcrumbs={breadcrumbs}
@@ -24,7 +22,6 @@ export default function MetatranscriptomicsSequencingPage() {
       <MetatranscriptomicsAdvantages />
       <MetatranscriptomicsApplications />
       <MetatranscriptomicsSpecifications />
-      <Footer />
-    </div>
+    </PageLayout>
   );
 }

@@ -1,11 +1,10 @@
-import Header from '../../../components/Layout/Header';
-import Footer from '../../../components/Layout/Footer';
 import TitleBar from '../../../components/shared/TitleBar';
 import WGBSIntroduction from './components/WGBSIntroduction';
 import WGBSAdvantages from './components/WGBSAdvantages';
 import WGBSBioinformatics from './components/WGBSBioinformatics';
 import WGBSApplications from './components/WGBSApplications';
 import WGBSSpecifications from './components/WGBSSpecifications';
+import PageLayout from '../../../components/Layout/PageLayout';
 
 export default function WGBSPage() {
   const breadcrumbs = [
@@ -16,8 +15,7 @@ export default function WGBSPage() {
   ];
 
   return (
-    <>
-      <Header />
+    <PageLayout fixedHeader={true}>
       <TitleBar
         title="Whole Genome Bisulphite Sequencing (WGBS)"
         desc="Comprehensive DNA Methylation Profiling"
@@ -31,7 +29,6 @@ export default function WGBSPage() {
         <WGBSApplications />
         <WGBSSpecifications />
       </div>
-      <Footer />
-    </>
+    </PageLayout>
   );
 }

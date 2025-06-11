@@ -1,11 +1,10 @@
 // app/dna-sequencing/microsatellites-ssr-str/page.js
-import Header from '../../components/Layout/Header';
-import Footer from '../../components/Layout/Footer';
 import TitleBar from '../../components/shared/TitleBar';
 import MicrosatellitesIntroduction from './components/MicrosatellitesIntroduction';
 import MicrosatellitesAdvantages from './components/MicrosatellitesAdvantages';
 import MicrosatellitesApplications from './components/MicrosatellitesApplications';
 import MicrosatellitesSpecifications from './components/MicrosatellitesSpecifications';
+import PageLayout from '../../components/Layout/PageLayout';
 
 export const metadata = {
   title: 'Microsatellites (SSR/STR) Based Genotyping - Operify Tech',
@@ -33,10 +32,7 @@ export default function MicrosatellitesSSRSTRPage() {
   ];
 
   return (
-    <div className="page-wrapper">
-      {/* Header */}
-      <Header />
-
+    <PageLayout fixedHeader={true}>
       {/* Title Bar */}
       <TitleBar 
         title="Microsatellites (SSR/STR)"
@@ -59,9 +55,6 @@ export default function MicrosatellitesSSRSTRPage() {
         {/* Specifications Section */}
         <MicrosatellitesSpecifications />
       </div>
-
-      {/* Footer */}
-      <Footer />
-    </div>
+    </PageLayout>
   );
 }

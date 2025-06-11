@@ -1,11 +1,10 @@
-import Header from '../../../components/Layout/Header';
-import Footer from '../../../components/Layout/Footer';
 import TitleBar from '../../../components/shared/TitleBar';
 import ChIPIntroduction from './components/ChIPIntroduction';
 import ChIPAdvantages from './components/ChIPAdvantages';
 import ChIPBioinformatics from './components/ChIPBioinformatics';
 import ChIPApplications from './components/ChIPApplications';
 import ChIPSpecifications from './components/ChIPSpecifications';
+import PageLayout from '../../../components/Layout/PageLayout';
 
 export default function ChIPSequencingPage() {
   const breadcrumbs = [
@@ -16,8 +15,7 @@ export default function ChIPSequencingPage() {
   ];
 
   return (
-    <>
-      <Header />
+    <PageLayout fixedHeader={true}>
       <TitleBar
         title="ChIP (Chromatin immunoprecipitation) Sequencing"
         desc="Dissecting Gene Regulation with ChIP-Seq"
@@ -31,7 +29,6 @@ export default function ChIPSequencingPage() {
         <ChIPApplications />
         <ChIPSpecifications />
       </div>
-      <Footer />
-    </>
+    </PageLayout>
   );
 }

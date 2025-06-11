@@ -1,19 +1,14 @@
 import React from 'react';
-import Header from '../components/Layout/Header';
-import Footer from '../components/Layout/Footer';
 import SampleFormPage from '../components/SampleForm/SampleFormPage';
+import PageLayout from '../components/Layout/PageLayout';
 
 export default function SamplesFormPage() {
   return (
-    <div className="min-h-screen bg-white">
-      <Header />
-      
-      <main>
+    <PageLayout fixedHeader={true}>
+      <main >
         <SampleFormPage />
       </main>
-      
-      <Footer />
-    </div>
+    </PageLayout>
   );
 }
 

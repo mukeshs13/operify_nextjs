@@ -1,11 +1,10 @@
 // app/dna-sequencing/metagenomics-sequencing/page.js
-import Header from '../../components/Layout/Header';
-import Footer from '../../components/Layout/Footer';
 import TitleBar from '../../components/shared/TitleBar';
 import MetagenomicsIntroduction from './components/MetagenomicsIntroduction';
 import MetagenomicsAdvantages from './components/MetagenomicsAdvantages';
 import MetagenomicsApplications from './components/MetagenomicsApplications';
 import MetagenomicsSpecifications from './components/MetagenomicsSpecifications';
+import PageLayout from '../../components/Layout/PageLayout';
 
 export const metadata = {
   title: 'Metagenomics Sequencing - Operify Tech',
@@ -33,10 +32,7 @@ export default function MetagenomicsSequencingPage() {
   ];
 
   return (
-    <div className="page-wrapper">
-      {/* Header */}
-      <Header />
-
+    <PageLayout fixedHeader={true}>
       {/* Title Bar */}
       <TitleBar 
         title="Metagenomics Sequencing"
@@ -59,9 +55,6 @@ export default function MetagenomicsSequencingPage() {
         {/* Specifications Section */}
         <MetagenomicsSpecifications />
       </div>
-
-      {/* Footer */}
-      <Footer />
-    </div>
+    </PageLayout>
   );
 }

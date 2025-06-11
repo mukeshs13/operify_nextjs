@@ -1,11 +1,10 @@
 // app/dna-sequencing/single-cell-dna-sequencing/page.js
-import Header from '../../components/Layout/Header';
-import Footer from '../../components/Layout/Footer';
 import TitleBar from '../../components/shared/TitleBar';
 import SingleCellIntroduction from './components/SingleCellIntroduction';
 import SingleCellAdvantages from './components/SingleCellAdvantages';
 import SingleCellApplications from './components/SingleCellApplications';
 import SingleCellSpecifications from './components/SingleCellSpecifications';
+import PageLayout from '../../components/Layout/PageLayout';
 
 export const metadata = {
   title: 'Single Cell DNA Sequencing - Operify Tech',
@@ -33,10 +32,7 @@ export default function SingleCellDNASequencingPage() {
   ];
 
   return (
-    <div className="page-wrapper">
-      {/* Header */}
-      <Header />
-
+    <PageLayout fixedHeader={true}>
       {/* Title Bar */}
       <TitleBar 
         title="Single Cell DNA Sequencing"
@@ -59,9 +55,6 @@ export default function SingleCellDNASequencingPage() {
         {/* Specifications Section */}
         <SingleCellSpecifications />
       </div>
-
-      {/* Footer */}
-      <Footer />
-    </div>
+    </PageLayout>
   );
 }

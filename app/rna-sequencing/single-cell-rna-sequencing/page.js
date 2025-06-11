@@ -1,10 +1,9 @@
-import Header from '../../components/Layout/Header';
-import Footer from '../../components/Layout/Footer';
 import TitleBar from '../../components/shared/TitleBar';
 import SingleCellIntroduction from './components/SingleCellIntroduction';
 import SingleCellAdvantages from './components/SingleCellAdvantages';
 import SingleCellApplications from './components/SingleCellApplications';
 import SingleCellSpecifications from './components/SingleCellSpecifications';
+import PageLayout from '../../components/Layout/PageLayout';
 
 export default function SingleCellRNASequencingPage() {
   const breadcrumbs = [
@@ -14,8 +13,7 @@ export default function SingleCellRNASequencingPage() {
   ];
 
   return (
-    <div>
-      <Header />
+    <PageLayout>
       <TitleBar 
         title="Single Cell RNA Sequencing"
         breadcrumbs={breadcrumbs}
@@ -24,7 +22,6 @@ export default function SingleCellRNASequencingPage() {
       <SingleCellAdvantages />
       <SingleCellApplications />
       <SingleCellSpecifications />
-      <Footer />
-    </div>
+    </PageLayout>
   );
 }

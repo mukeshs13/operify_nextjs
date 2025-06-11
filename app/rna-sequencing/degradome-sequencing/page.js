@@ -1,10 +1,9 @@
-import Header from '../../components/Layout/Header';
-import Footer from '../../components/Layout/Footer';
 import TitleBar from '../../components/shared/TitleBar';
 import DegradomeIntroduction from './components/DegradomeIntroduction';
 import DegradomeAdvantages from './components/DegradomeAdvantages';
 import DegradomeApplications from './components/DegradomeApplications';
 import DegradomeSpecifications from './components/DegradomeSpecifications';
+import PageLayout from '../../components/Layout/PageLayout';
 
 export default function DegradomeSequencingPage() {
   const breadcrumbs = [
@@ -14,8 +13,7 @@ export default function DegradomeSequencingPage() {
   ];
 
   return (
-    <div>
-      <Header />
+    <PageLayout fixedHeader={true}>
       <TitleBar 
         title="Degradome Sequencing"
         breadcrumbs={breadcrumbs}
@@ -24,7 +22,6 @@ export default function DegradomeSequencingPage() {
       <DegradomeAdvantages />
       <DegradomeApplications />
       <DegradomeSpecifications />
-      <Footer />
-    </div>
+    </PageLayout>
   );
 }

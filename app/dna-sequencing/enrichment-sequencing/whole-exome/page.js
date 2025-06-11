@@ -1,11 +1,10 @@
 // app/dna-sequencing/enrichment-sequencing/whole-exome/page.js
-import Header from '../../../components/Layout/Header';
-import Footer from '../../../components/Layout/Footer';
 import TitleBar from '../../../components/shared/TitleBar';
 import ExomeIntroduction from './components/ExomeIntroduction';
 import ExomeAdvantages from './components/ExomeAdvantages';
 import ExomeApplications from './components/ExomeApplications';
 import ExomeSpecifications from './components/ExomeSpecifications';
+import PageLayout from '../../../components/Layout/PageLayout';
 
 export default function WholeExomeSequencingPage() {
   const breadcrumbs = [
@@ -16,8 +15,7 @@ export default function WholeExomeSequencingPage() {
   ];
 
   return (
-    <>
-      <Header />
+    <PageLayout fixedHeader={true}>
       <div className="page-wrapper">
         <TitleBar 
           title="Whole Exome Sequencing"
@@ -33,7 +31,6 @@ export default function WholeExomeSequencingPage() {
           <ExomeSpecifications />
         </div>
       </div>
-      <Footer />
-    </>
+    </PageLayout>
   );
 }

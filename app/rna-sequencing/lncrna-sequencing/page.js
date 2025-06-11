@@ -1,13 +1,11 @@
 // app/rna-sequencing/lncrna-sequencing/page.js
-
-import Header from '../../components/Layout/Header';
-import Footer from '../../components/Layout/Footer';
 import TitleBar from '../../components/shared/TitleBar';
 import LncRNAIntroduction from './components/LncRNAIntroduction';
 import LncRNAAdvantages from './components/LncRNAAdvantages';
 import LncRNABioinformatics from './components/LncRNABioinformatics';
 import LncRNAApplications from './components/LncRNAApplications';
 import LncRNASpecifications from './components/LncRNASpecifications';
+import PageLayout from '../../components/Layout/PageLayout';
 
 export default function LncRNASequencingPage() {
   const breadcrumbs = [
@@ -17,8 +15,7 @@ export default function LncRNASequencingPage() {
   ];
 
   return (
-    <div>
-      <Header />
+    <PageLayout fixedHeader={true}>
       <TitleBar 
         title="LncRNA Sequencing"
         breadcrumbs={breadcrumbs}
@@ -28,7 +25,6 @@ export default function LncRNASequencingPage() {
       <LncRNABioinformatics />
       <LncRNAApplications />
       <LncRNASpecifications />
-      <Footer />
-    </div>
+    </PageLayout>
   );
 }

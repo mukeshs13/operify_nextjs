@@ -1,19 +1,16 @@
 import React from 'react';
-import Header from '../components/Layout/Header';
-import Footer from '../components/Layout/Footer';
+import PageLayout from '../components/Layout/PageLayout';
 import ContactPage from '../components/ContactPage/ContactPage';
 
 export default function ContactUsPage() {
   return (
-    <div className="min-h-screen bg-white">
-      <Header />
+    <PageLayout fixedHeader={true}>
       
       <main>
         <ContactPage />
       </main>
       
-      <Footer />
-    </div>
+    </PageLayout>
   );
 }
 

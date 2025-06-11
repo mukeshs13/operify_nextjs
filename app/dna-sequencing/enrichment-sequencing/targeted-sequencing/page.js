@@ -1,10 +1,9 @@
-import Header from '../../../components/Layout/Header';
-import Footer from '../../../components/Layout/Footer';
 import TitleBar from '../../../components/shared/TitleBar';
 import TargetedIntroduction from './components/TargetedIntroduction';
 import TargetedAdvantages from './components/TargetedAdvantages';
 import TargetedApplications from './components/TargetedApplications';
 import TargetedSpecifications from './components/TargetedSpecifications';
+import PageLayout from '../../../components/Layout/PageLayout';
 
 export default function TargetedSequencingPage() {
   const breadcrumbs = [
@@ -15,8 +14,7 @@ export default function TargetedSequencingPage() {
   ];
 
   return (
-    <>
-      <Header />
+    <PageLayout fixedHeader={true}>
       <TitleBar
         title="Targeted DNA Sequencing"
         desc="Pinpoint Precision for Your Genetic Insights"
@@ -29,7 +27,6 @@ export default function TargetedSequencingPage() {
         <TargetedApplications />
         <TargetedSpecifications />
       </div>
-      <Footer />
-    </>
+    </PageLayout>
   );
 }

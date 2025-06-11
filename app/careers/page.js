@@ -1,19 +1,14 @@
 import React from 'react';
-import Header from '../components/Layout/Header';
-import Footer from '../components/Layout/Footer';
+import PageLayout from '../components/Layout/PageLayout';
 import CareerPage from '../components/Career/CareerPage';
 
 export default function CareersPage() {
   return (
-    <div className="min-h-screen bg-white">
-      <Header />
-      
+    <PageLayout fixedHeader={true}>
       <main>
         <CareerPage />
       </main>
-      
-      <Footer />
-    </div>
+    </PageLayout>
   );
 }
 

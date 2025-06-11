@@ -1,11 +1,10 @@
 // app/dna-sequencing/genome-mapping/hi-c-mapping/page.js
-import Header from '../../../components/Layout/Header';
-import Footer from '../../../components/Layout/Footer';
 import TitleBar from '../../../components/shared/TitleBar';
 import HiCMappingIntroduction from './components/HiCMappingIntroduction';
 import HiCMappingAdvantages from './components/HiCMappingAdvantages';
 import HiCMappingApplications from './components/HiCMappingApplications';
 import HiCMappingSpecifications from './components/HiCMappingSpecifications';
+import PageLayout from '../../../components/Layout/PageLayout';
 
 export const metadata = {
   title: 'High-throughput Chromosome Conformation Capture (Hi-C) Mapping - Operify Tech',
@@ -38,10 +37,7 @@ export default function HiCMappingPage() {
   ];
 
   return (
-    <div className="page-wrapper">
-      {/* Header */}
-      <Header />
-
+    <PageLayout fixedHeader={true}>
       {/* Title Bar */}
       <TitleBar 
         title="High-throughput Chromosome Conformation Capture (Hi-C) Mapping"
@@ -64,9 +60,6 @@ export default function HiCMappingPage() {
         {/* Specifications Section */}
         <HiCMappingSpecifications />
       </div>
-
-      {/* Footer */}
-      <Footer />
-    </div>
+    </PageLayout>
   );
 }

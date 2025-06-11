@@ -1,9 +1,8 @@
-import Header from '../../components/Layout/Header';
-import Footer from '../../components/Layout/Footer';
 import TitleBar from '../../components/shared/TitleBar';
 import EpigenomicsIntroduction from './components/EpigenomicsIntroduction';
 import EpigenomicsAdvantages from './components/EpigenomicsAdvantages';
 import EpigenomicsSpecifications from './components/EpigenomicsSpecifications';
+import PageLayout from '../../components/Layout/PageLayout';
 
 export default function EpigenomicsSequencingPage() {
   const breadcrumbs = [
@@ -13,8 +12,7 @@ export default function EpigenomicsSequencingPage() {
   ];
 
   return (
-    <>
-      <Header />
+    <PageLayout fixedHeader={true}>
       <TitleBar
         title="Epigenomics Sequencing"
         desc="Explore Cellular Memory"
@@ -26,7 +24,6 @@ export default function EpigenomicsSequencingPage() {
         <EpigenomicsAdvantages />
         <EpigenomicsSpecifications />
       </div>
-      <Footer />
-    </>
+    </PageLayout>
   );
 }

@@ -1,10 +1,9 @@
-import Header from '../../../components/Layout/Header';
-import Footer from '../../../components/Layout/Footer';
 import TitleBar from '../../../components/shared/TitleBar';
 import ResequencingIntroduction from './components/ResequencingIntroduction';
 import ResequencingAdvantages from './components/ResequencingAdvantages';
 import ResequencingApplications from './components/ResequencingApplications';
 import ResequencingSpecifications from './components/ResequencingSpecifications';
+import PageLayout from '../../../components/Layout/PageLayout';
 
 export default function WholeGenomeResequencingPage() {
   const breadcrumbs = [
@@ -15,8 +14,7 @@ export default function WholeGenomeResequencingPage() {
   ];
 
   return (
-    <>
-      <Header />
+    <PageLayout fixedHeader={true}>
       <TitleBar
         title="Whole Genome ReSequencing"
         desc="Unraveling Genomic Complexity with Re-Sequencing"
@@ -29,7 +27,6 @@ export default function WholeGenomeResequencingPage() {
         <ResequencingApplications />
         <ResequencingSpecifications />
       </div>
-      <Footer />
-    </>
+    </PageLayout>
   );
 }

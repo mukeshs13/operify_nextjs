@@ -1,10 +1,9 @@
-import Header from '../../components/Layout/Header';
-import Footer from '../../components/Layout/Footer';
 import TitleBar from '../../components/shared/TitleBar';
 import IsoIntroduction from './components/IsoIntroduction';
 import IsoAdvantages from './components/IsoAdvantages';
 import IsoApplications from './components/IsoApplications';
 import IsoSpecifications from './components/IsoSpecifications';
+import PageLayout from '../../components/Layout/PageLayout';
 
 export default function IsoSequencingPage() {
   const breadcrumbs = [
@@ -14,8 +13,7 @@ export default function IsoSequencingPage() {
   ];
 
   return (
-    <div>
-      <Header />
+    <PageLayout fixedHeader={true}>
       <TitleBar 
         title="Iso Sequencing using PacBio"
         breadcrumbs={breadcrumbs}
@@ -24,7 +22,6 @@ export default function IsoSequencingPage() {
       <IsoAdvantages />
       <IsoApplications />
       <IsoSpecifications />
-      <Footer />
-    </div>
+    </PageLayout>
   );
 }

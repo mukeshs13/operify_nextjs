@@ -1,21 +1,16 @@
 import React from 'react';
-import Header from '../components/Layout/Header';
-import Footer from '../components/Layout/Footer';
+import PageLayout from "../components/Layout/PageLayout";
 import TeamHero from '../components/Team/TeamHero';
 import TeamGrid from '../components/Team/TeamGrid';
 
 export default function OurTeamPage() {
   return (
-    <div className="min-h-screen bg-white">
-      <Header />
-      
+    <PageLayout fixedHeader={true}>
       <main>
         <TeamHero />
         <TeamGrid />
       </main>
-      
-      <Footer />
-    </div>
+    </PageLayout>
   );
 }
 

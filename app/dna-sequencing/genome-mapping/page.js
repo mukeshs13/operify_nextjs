@@ -1,10 +1,9 @@
 // app/dna-sequencing/genome-mapping/page.js
-import Header from '../../components/Layout/Header';
-import Footer from '../../components/Layout/Footer';
 import TitleBar from '../../components/shared/TitleBar';
 import GenomeMappingIntroduction from './components/GenomeMappingIntroduction';
 import GenomeMappingAdvantages from './components/GenomeMappingAdvantages';
 import GenomeMappingSpecifications from './components/GenomeMappingSpecifications';
+import PageLayout from '../../components/Layout/PageLayout';
 
 export const metadata = {
   title: 'Genome Mapping - Operify Tech',
@@ -32,10 +31,7 @@ export default function GenomeMappingPage() {
   ];
 
   return (
-    <div className="page-wrapper">
-      {/* Header */}
-      <Header />
-
+    <PageLayout fixedHeader={true}>
       {/* Title Bar */}
       <TitleBar 
         title="Genome Mapping"
@@ -55,9 +51,6 @@ export default function GenomeMappingPage() {
         {/* Specifications Section */}
         <GenomeMappingSpecifications />
       </div>
-
-      {/* Footer */}
-      <Footer />
-    </div>
+    </PageLayout>
   );
 }

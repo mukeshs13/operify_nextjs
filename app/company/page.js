@@ -1,8 +1,7 @@
 // app/company/page.js
 
 import React from 'react';
-import Header from '../components/Layout/Header';
-import Footer from '../components/Layout/Footer';
+import PageLayout from '../components/Layout/PageLayout';
 import CompanyHero from '../components/Company/CompanyHero'
 import CompanyIntro from '../components/Company/CompanyIntro';
 import VisionMission from '../components/Company/VisionMission';
@@ -11,19 +10,15 @@ import WhyChooseUs from '../components/Company/WhyChooseUs';
 
 export default function CompanyPage() {
   return (
-    <div className="min-h-screen bg-white">
-      <Header />
-      
-      <main>
+    <PageLayout fixedHeader={true}>
+      \<main>
         <CompanyHero />
         <CompanyIntro />
         <VisionMission />
         <OurOfferings />
         <WhyChooseUs />
       </main>
-      
-      <Footer />
-    </div>
+    </PageLayout>
   );
 }
 

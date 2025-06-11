@@ -1,19 +1,14 @@
 import React from 'react';
-import Header from '../components/Layout/Header';
-import Footer from '../components/Layout/Footer';
+import PageLayout from '../components/Layout/PageLayout';
 import PackagingShippingPage from '../components/PackagingShipping/PackagingShippingPage';
 
 export default function PackagingShippingGuideline() {
   return (
-    <div className="min-h-screen bg-white">
-      <Header />
-      
+    <PageLayout fixedHeader={true}>
       <main>
         <PackagingShippingPage />
       </main>
-      
-      <Footer />
-    </div>
+    </PageLayout>
   );
 }
 

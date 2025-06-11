@@ -1,6 +1,5 @@
-import Header from '../../components/Layout/Header';
-import Footer from '../../components/Layout/Footer';
 import TitleBar from '../../components/shared/TitleBar';
+import PageLayout from '../../components/Layout/PageLayout'
 import CircularIntroduction from './components/CircularIntroduction';
 import CircularAdvantages from './components/CircularAdvantages';
 import CircularApplications from './components/CircularApplications';
@@ -14,8 +13,7 @@ export default function CircularRNASequencingPage() {
   ];
 
   return (
-    <div>
-      <Header />
+    <PageLayout fixedHeader={true}>
       <TitleBar 
         title="Circular RNA Sequencing"
         breadcrumbs={breadcrumbs}
@@ -24,7 +22,6 @@ export default function CircularRNASequencingPage() {
       <CircularAdvantages />
       <CircularApplications />
       <CircularSpecifications />
-      <Footer />
-    </div>
+    </PageLayout>
   );
 }

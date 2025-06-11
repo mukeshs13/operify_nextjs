@@ -1,10 +1,9 @@
 // app/dna-sequencing/whole-genome-sequencing/page.js (Updated)
-import Header from '../../components/Layout/Header';
-import Footer from '../../components/Layout/Footer';
 import TitleBar from '../../components/shared/TitleBar';
 import WGSIntroduction from './components/WGSIntroduction';
 import WGSAdvantages from './components/WGSAdvantages';
 import WGSSpecifications from './components/WGSSpecifications';
+import PageLayout from '@/app/components/Layout/PageLayout';
 
 export default function WholeGenomeSequencingPage() {
   const breadcrumbs = [
@@ -14,8 +13,7 @@ export default function WholeGenomeSequencingPage() {
   ];
 
   return (
-    <>
-      <Header />
+    <PageLayout fixedHeader={true}>
       <TitleBar
         title="Whole Genome Sequencing"
         desc="Whole Genome, Whole Insights"
@@ -27,7 +25,6 @@ export default function WholeGenomeSequencingPage() {
         <WGSAdvantages />
         <WGSSpecifications />
       </div>
-      <Footer />
-    </>
+    </PageLayout>
   );
 }

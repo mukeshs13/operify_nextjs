@@ -1,12 +1,11 @@
 // app/dna-sequencing/snp-genotyping/page.js
-import Header from '../../components/Layout/Header';
-import Footer from '../../components/Layout/Footer';
 import TitleBar from '../../components/shared/TitleBar';
 import HybridIntroduction from './components/HybridIntroduction';
 import HybridAdvantages from './components/HybridAdvantages';
 import HybridBioinformatics from './components/HybridBioinformatics';
 import HybridApplications from './components/HybridApplications';
 import HybridSpecifications from './components/HybridSpecifications';
+import PageLayout from '../../components/Layout/PageLayout';
 
 export const metadata = {
   title: 'Hybrid Genome Sequencing - Operify Tech',
@@ -34,10 +33,7 @@ export default function HybridGenomeSequencingPage() {
   ];
 
   return (
-    <div className="page-wrapper">
-      {/* Header */}
-      <Header />
-
+    <PageLayout fixedHeader={true}>
       {/* Title Bar */}
       <TitleBar 
         title="Hybrid Genome Sequencing"
@@ -63,9 +59,6 @@ export default function HybridGenomeSequencingPage() {
         {/* Specifications Section */}
         <HybridSpecifications />
       </div>
-
-      {/* Footer */}
-      <Footer />
-    </div>
+    </PageLayout>
   );
 }

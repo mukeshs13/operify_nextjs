@@ -1,10 +1,9 @@
-import Header from '../../../components/Layout/Header';
-import Footer from '../../../components/Layout/Footer';
 import TitleBar from '../../../components/shared/TitleBar';
 import AmpliconIntroduction from './components/AmpliconIntroduction';
 import AmpliconAdvantages from './components/AmpliconAdvantages';
 import AmpliconApplications from './components/AmpliconApplications';
 import AmpliconSpecifications from './components/AmpliconSpecifications';
+import PageLayout from '../../../components/Layout/PageLayout';
 
 export default function AmpliconSequencingPage() {
   const breadcrumbs = [
@@ -15,8 +14,7 @@ export default function AmpliconSequencingPage() {
   ];
 
   return (
-    <>
-      <Header />
+    <PageLayout fixedHeader={true}>
       <TitleBar
         title="Amplicon Sequencing (16S/18S/ITS)"
         desc="Explore Genetic Diversity at the Molecular Level"
@@ -29,7 +27,6 @@ export default function AmpliconSequencingPage() {
         <AmpliconApplications />
         <AmpliconSpecifications />
       </div>
-      <Footer />
-    </>
+    </PageLayout>
   );
 }

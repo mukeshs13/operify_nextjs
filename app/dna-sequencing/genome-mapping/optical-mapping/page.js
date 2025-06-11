@@ -1,11 +1,10 @@
 // app/dna-sequencing/genome-mapping/optical-mapping/page.js
-import Header from '../../../components/Layout/Header';
-import Footer from '../../../components/Layout/Footer';
 import TitleBar from '../../../components/shared/TitleBar';
 import OpticalMappingIntroduction from './components/OpticalMappingIntroduction';
 import OpticalMappingAdvantages from './components/OpticalMappingAdvantages';
 import OpticalMappingApplications from './components/OpticalMappingApplications';
 import OpticalMappingSpecifications from './components/OpticalMappingSpecifications';
+import PageLayout from '../../../components/Layout/PageLayout';
 
 export const metadata = {
   title: 'Optical Mapping - Operify Tech',
@@ -38,10 +37,7 @@ export default function OpticalMappingPage() {
   ];
 
   return (
-    <div className="page-wrapper">
-      {/* Header */}
-      <Header />
-
+    <PageLayout fixedHeader={true}>
       {/* Title Bar */}
       <TitleBar 
         title="Optical Mapping"
@@ -65,8 +61,6 @@ export default function OpticalMappingPage() {
         <OpticalMappingSpecifications />
       </div>
 
-      {/* Footer */}
-      <Footer />
-    </div>
+    </PageLayout>
   );
 }
