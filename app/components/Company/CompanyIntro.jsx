@@ -9,7 +9,7 @@ const CompanyIntro = () => {
           <div className="bg-gradient-to-br from-teal-600 to-teal-700 text-white p-8 lg:p-12 flex items-center">
             <div className="w-full">
 
-              <p className="text-base lg:text-lg leading-relaxed text-justify font-light">
+              <p className=" leading-relaxed text-justify">
                 Operify Tech is at the forefront of unlocking genomic secrets through advanced
                 next-generation sequencing (NGS) technology that empowers researchers,
                 academicians, and innovators. We are ISO certified for quality management of DNA
