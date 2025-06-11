@@ -11,7 +11,7 @@ import WhyChooseUs from '../components/Company/WhyChooseUs';
 export default function CompanyPage() {
   return (
     <PageLayout fixedHeader={true}>
-      \<main>
+      <main>
         <CompanyHero />
         <CompanyIntro />
         <VisionMission />

@@ -1,9 +1,9 @@
 {
   "/_not-found/page": "app/_not-found/page.js",
-  "/dna-sequencing/enrichment-sequencing/amplicon-sequencing/page": "app/dna-sequencing/enrichment-sequencing/amplicon-sequencing/page.js",
   "/dna-sequencing/enrichment-sequencing/targeted-sequencing/page": "app/dna-sequencing/enrichment-sequencing/targeted-sequencing/page.js",
   "/dna-sequencing/single-cell-dna-sequencing/page": "app/dna-sequencing/single-cell-dna-sequencing/page.js",
   "/dna-sequencing/metagenomics-sequencing/page": "app/dna-sequencing/metagenomics-sequencing/page.js",
   "/dna-sequencing/epigenomics-sequencing/page": "app/dna-sequencing/epigenomics-sequencing/page.js",
-  "/dna-sequencing/epigenomics-sequencing/wgbs/page": "app/dna-sequencing/epigenomics-sequencing/wgbs/page.js"
+  "/dna-sequencing/epigenomics-sequencing/wgbs/page": "app/dna-sequencing/epigenomics-sequencing/wgbs/page.js",
+  "/company/page": "app/company/page.js"
 }
