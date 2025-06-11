@@ -3,14 +3,14 @@ import Image from 'next/image';
 
 const OurOfferings = () => {
   return (
-    <section className="py-16 bg-white rounded-2xl shadow-lg">
+    <section className="pt-6 bg-white rounded-2xl shadow-lg">
       <div className="container mx-auto px-4">
-        <h2 className="text-4xl font-bold text-gray-700 text-left pb-2 mb-10">
+        <h2 className="text-4xl font-bold text-gray-700 text-left pb-2 mb-4">
           Our Offerings
         </h2>
 
         {/* Services paragraph */}
-        <div className="mb-10 text-justify">
+        <div className="mb-4 text-justify">
           <p className="text-gray-600 leading-relaxed text-base">
             Our diverse portfolio covers entire spectrum of services Whole Genome DNA
             Sequencing, Hi-C Sequencing, Optical mapping, Whole Exome DNA Sequencing,
@@ -22,7 +22,7 @@ const OurOfferings = () => {
         </div>
 
         {/* Introduction text */}
-        <div className="mb-8 text-justify">
+        <div className="mb-4 text-justify">
           <p className="text-gray-600 text-base leading-relaxed">
             As your trusted ally, we deliver customized solutions for extraction,
             library preparation, sequencing, and bioinformatics, all from our state-of-the-art New Delhi
@@ -33,7 +33,7 @@ const OurOfferings = () => {
         </div>
 
         {/* Team Highlight */}
-        <div className="mb-6 text-justify">
+        <div className="mb-4 text-justify">
           <p className="text-gray-600 text-base leading-relaxed">
             Our team of PhDs, leading each department, ensures unmatched support from
             initial consultation to post-delivery assistance, providing a seamless experience
@@ -51,7 +51,7 @@ const OurOfferings = () => {
         </div>
 
         {/* Centered image with background effect */}
-        <div className="max-w-2xl mx-auto text-center">
+        <div className="max-w-2xl mx-auto text-center pb-4">
           <div className="relative">
             {/* Background gradient circle */}
             <div className="absolute inset-0 flex items-center justify-center">

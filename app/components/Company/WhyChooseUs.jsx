@@ -40,7 +40,7 @@ const WhyChooseUs = () => {
   ];
 
   return (
-    <section className="py-12">
+    <section>
       <div className="container mx-auto max-w-none px-4">
         <div className="rounded-3xl p-8" style={{ backgroundColor: '#f2fcfc' }}>
           <div className="mb-6">
