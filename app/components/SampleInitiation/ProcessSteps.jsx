@@ -41,7 +41,7 @@ const ProcessSteps = () => {
           
           {/* Step Content */}
           <div className="flex-1 min-w-0">
-            <h3 className="text-gray-600 text-lg md:text-xl font-medium mb-2">
+            <h3 className="text-lg md:text-xl font-medium mb-2" style={{ color: '#2a6564' }}>
               {step.title}
             </h3>
             <ul className="list-disc list-inside space-y-2 text-gray-700 leading-relaxed pl-4">

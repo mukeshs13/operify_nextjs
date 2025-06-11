@@ -8,7 +8,7 @@ const ProcessSection = () => {
       <div className="container mx-auto max-w-none px-4">
         <div className="bg-white p-4 md:p-6">
           {/* Main Title */}
-          <div className="text-left mb-8">
+          <div className="text-left mb-4">
             <h2 className="text-2xl md:text-4xl text-gray-600 font-normal">
               Welcome to Our Online Submission Portal!
             </h2>

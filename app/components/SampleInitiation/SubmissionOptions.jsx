@@ -197,7 +197,7 @@ const SubmissionOptions = () => {
       </div>
 
       {/* Action Buttons */}
-      <div className="space-y-6">
+      <div className="space-y-2">
         {/* Main Action Buttons */}
         <div className="flex flex-col md:flex-row gap-4 items-center justify-center">
           <button

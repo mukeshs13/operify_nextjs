@@ -47,7 +47,7 @@ const Header = () => {
           </div>
 
           {/* Desktop Navigation */}
-          <nav className="hidden lg:flex flex-1 justify-center">
+          <nav className="hidden lg:flex flex-1 justify-start ml-10">
             <ul className="flex space-x-8 xl:space-x-12">
               <li className="relative group">
                 <Link
