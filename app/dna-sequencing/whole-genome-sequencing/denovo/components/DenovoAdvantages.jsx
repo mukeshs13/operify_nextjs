@@ -13,7 +13,6 @@ const DenovoAdvantages = () => {
     <AdvantagesLayout
       title="Advantages of Whole Genome Denovo Sequencing"
       advantageItems={advantageItems}
-      backgroundGradient="bg-gradient-to-br from-cyan-50 to-white"
     />
   );
 };
