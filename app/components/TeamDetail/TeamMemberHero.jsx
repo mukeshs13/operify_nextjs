@@ -9,7 +9,7 @@ const TeamMemberHero = ({ memberName }) => {
     >
       {/* Breadcrumb */}
       <div className="relative z-10 mb-2 sm:mb-1 pt-2 sm:pt-0 sm:-mt-3 lg:-mt-3">
-        <div className="container mx-auto px-4">
+        <div className="container mx-auto max-w-none px-4">
           <nav className="flex flex-wrap items-center gap-1 sm:gap-2 text-xs sm:text-sm lg:text-sm">
             <Link href="/" className="text-white hover:text-yellow-400 underline whitespace-nowrap">Home</Link>
             <span className="text-white flex-shrink-0">

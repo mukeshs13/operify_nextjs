@@ -8,7 +8,7 @@ const CareerHero = () => {
     >
       {/* Breadcrumb */}
       <div className="relative z-10 mb-1 -mt-3">
-        <div className="container mx-auto px-4">
+        <div className="container mx-auto max-w-none px-4">
           <nav className="flex items-center space-x-2 text-sm">
             <a href="/" className="text-white hover:text-yellow-400 underline">Home</a>
             <span className="text-white">
