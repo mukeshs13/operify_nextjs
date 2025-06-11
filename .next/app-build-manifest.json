@@ -91,6 +91,16 @@
       "static/chunks/main-app.js",
       "static/chunks/app/dna-sequencing/long-read-sequencing/page.js"
     ],
+    "/dna-sequencing/epigenomics-sequencing/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/dna-sequencing/epigenomics-sequencing/page.js"
+    ],
+    "/rna-sequencing/degradome-sequencing/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/rna-sequencing/degradome-sequencing/page.js"
+    ],
     "/_not-found/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",

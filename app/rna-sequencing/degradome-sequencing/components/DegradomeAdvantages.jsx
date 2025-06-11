@@ -1,5 +1,5 @@
 // DegradomeAdvantages.jsx
-import AdvantagesLayout from '../../../../components/shared/AdvantagesLayout';
+import AdvantagesLayout from '../../../components/shared/AdvantagesLayout';
 
 const DegradomeAdvantages = () => {
   const advantageItems = [
